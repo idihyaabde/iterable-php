@@ -1,4 +1,4 @@
-# IterableIA\ListsApi
+# IterableIA\Iterable\ListsApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**unsubscribe**](ListsApi.md#unsubscribe) | **POST** /api/lists/unsubscribe | Remove users from a list
 
 # **create**
-> \IterableIA\Model\CreateListResponse create($body)
+> \IterableIA\Iterable\Model\CreateListResponse create($body)
 
 Create a static list
 
@@ -24,17 +24,17 @@ Create a new static list.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\CreateListRequest(); // \IterableIA\Model\CreateListRequest | name
+$body = new \IterableIA\Iterable\Model\CreateListRequest(); // \IterableIA\Iterable\Model\CreateListRequest | name
 
 try {
     $result = $apiInstance->create($body);
@@ -49,11 +49,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\CreateListRequest**](../Model/CreateListRequest.md)| name |
+ **body** | [**\IterableIA\Iterable\Model\CreateListRequest**](../Model/CreateListRequest.md)| name |
 
 ### Return type
 
-[**\IterableIA\Model\CreateListResponse**](../Model/CreateListResponse.md)
+[**\IterableIA\Iterable\Model\CreateListResponse**](../Model/CreateListResponse.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteStaticList**
-> \IterableIA\Model\IterableApiResponse deleteStaticList($list_id)
+> \IterableIA\Iterable\Model\IterableApiResponse deleteStaticList($list_id)
 
 Delete a static list
 
@@ -78,11 +78,11 @@ Delete a static list by listId.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -132,11 +132,11 @@ Get the number of users within a list. <b>Rate limit</b>: 5 requests/minute, per
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,11 +186,11 @@ Get all users within a list. <b>Rate limit</b>: 5 requests/minute, per project.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLists**
-> \IterableIA\Model\GetListsResponse getLists()
+> \IterableIA\Iterable\Model\GetListsResponse getLists()
 
 Get lists
 
@@ -240,11 +240,11 @@ Get all lists within a project. <b>Rate limit</b>: 100 requests/second, per proj
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -265,7 +265,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\IterableIA\Model\GetListsResponse**](../Model/GetListsResponse.md)
+[**\IterableIA\Iterable\Model\GetListsResponse**](../Model/GetListsResponse.md)
 
 ### Authorization
 
@@ -279,7 +279,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscribe**
-> \IterableIA\Model\ListResponse subscribe($body)
+> \IterableIA\Iterable\Model\ListResponse subscribe($body)
 
 Add subscribers to list
 
@@ -290,17 +290,17 @@ Add specific subscribers to a list.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\SubscribeRequest(); // \IterableIA\Model\SubscribeRequest | email list id and list of emails
+$body = new \IterableIA\Iterable\Model\SubscribeRequest(); // \IterableIA\Iterable\Model\SubscribeRequest | email list id and list of emails
 
 try {
     $result = $apiInstance->subscribe($body);
@@ -315,11 +315,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\SubscribeRequest**](../Model/SubscribeRequest.md)| email list id and list of emails |
+ **body** | [**\IterableIA\Iterable\Model\SubscribeRequest**](../Model/SubscribeRequest.md)| email list id and list of emails |
 
 ### Return type
 
-[**\IterableIA\Model\ListResponse**](../Model/ListResponse.md)
+[**\IterableIA\Iterable\Model\ListResponse**](../Model/ListResponse.md)
 
 ### Authorization
 
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **unsubscribe**
-> \IterableIA\Model\ListResponse unsubscribe($body)
+> \IterableIA\Iterable\Model\ListResponse unsubscribe($body)
 
 Remove users from a list
 
@@ -344,17 +344,17 @@ Remove specific users from a list.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\ListsApi(
+$apiInstance = new IterableIA\Iterable\Api\ListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UnsubscribeRequest(); // \IterableIA\Model\UnsubscribeRequest | email list id and list of emails
+$body = new \IterableIA\Iterable\Model\UnsubscribeRequest(); // \IterableIA\Iterable\Model\UnsubscribeRequest | email list id and list of emails
 
 try {
     $result = $apiInstance->unsubscribe($body);
@@ -369,11 +369,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UnsubscribeRequest**](../Model/UnsubscribeRequest.md)| email list id and list of emails |
+ **body** | [**\IterableIA\Iterable\Model\UnsubscribeRequest**](../Model/UnsubscribeRequest.md)| email list id and list of emails |
 
 ### Return type
 
-[**\IterableIA\Model\ListResponse**](../Model/ListResponse.md)
+[**\IterableIA\Iterable\Model\ListResponse**](../Model/ListResponse.md)
 
 ### Authorization
 

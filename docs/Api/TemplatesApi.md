@@ -1,4 +1,4 @@
-# IterableIA\TemplatesApi
+# IterableIA\Iterable\TemplatesApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**upsertSMSTemplate**](TemplatesApi.md#upsertsmstemplate) | **POST** /api/templates/sms/upsert | Create an SMS template
 
 # **getByClientTemplateId**
-> \IterableIA\Model\ClientTemplateIdResponse getByClientTemplateId($client_template_id)
+> \IterableIA\Iterable\Model\ClientTemplateIdResponse getByClientTemplateId($client_template_id)
 
 Get an email template by Client Template ID
 
@@ -28,11 +28,11 @@ Get an email template by Client Template ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\ClientTemplateIdResponse**](../Model/ClientTemplateIdResponse.md)
+[**\IterableIA\Iterable\Model\ClientTemplateIdResponse**](../Model/ClientTemplateIdResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEmailTemplate**
-> \IterableIA\Model\ApiEmailTemplateModel getEmailTemplate($template_id, $locale)
+> \IterableIA\Iterable\Model\ApiEmailTemplateModel getEmailTemplate($template_id, $locale)
 
 Get an email template by templateId
 
@@ -82,11 +82,11 @@ Get an email template by templateId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\ApiEmailTemplateModel**](../Model/ApiEmailTemplateModel.md)
+[**\IterableIA\Iterable\Model\ApiEmailTemplateModel**](../Model/ApiEmailTemplateModel.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPushTemplate**
-> \IterableIA\Model\ApiPushTemplateModel getPushTemplate($template_id, $locale)
+> \IterableIA\Iterable\Model\ApiPushTemplateModel getPushTemplate($template_id, $locale)
 
 Get a push template
 
@@ -138,11 +138,11 @@ Get a push template
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\ApiPushTemplateModel**](../Model/ApiPushTemplateModel.md)
+[**\IterableIA\Iterable\Model\ApiPushTemplateModel**](../Model/ApiPushTemplateModel.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSMSTemplate**
-> \IterableIA\Model\ApiSMSTemplateModel getSMSTemplate($template_id, $locale)
+> \IterableIA\Iterable\Model\ApiSMSTemplateModel getSMSTemplate($template_id, $locale)
 
 Get an SMS template
 
@@ -194,11 +194,11 @@ Get an SMS template
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\ApiSMSTemplateModel**](../Model/ApiSMSTemplateModel.md)
+[**\IterableIA\Iterable\Model\ApiSMSTemplateModel**](../Model/ApiSMSTemplateModel.md)
 
 ### Authorization
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTemplates**
-> \IterableIA\Model\GetTemplatesResponse getTemplates($template_type, $message_medium, $start_date_time, $end_date_time)
+> \IterableIA\Iterable\Model\GetTemplatesResponse getTemplates($template_type, $message_medium, $start_date_time, $end_date_time)
 
 Get templates
 
@@ -250,11 +250,11 @@ Get templates for a project. <b>Rate limit</b>: 100 requests/second, per project
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\GetTemplatesResponse**](../Model/GetTemplatesResponse.md)
+[**\IterableIA\Iterable\Model\GetTemplatesResponse**](../Model/GetTemplatesResponse.md)
 
 ### Authorization
 
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateEmailTemplate**
-> \IterableIA\Model\IterableApiResponse updateEmailTemplate($body)
+> \IterableIA\Iterable\Model\IterableApiResponse updateEmailTemplate($body)
 
 Update email template
 
@@ -308,17 +308,17 @@ Update email template
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\ApiEmailTemplateModel(); // \IterableIA\Model\ApiEmailTemplateModel | Only the fields specified will be updated
+$body = new \IterableIA\Iterable\Model\ApiEmailTemplateModel(); // \IterableIA\Iterable\Model\ApiEmailTemplateModel | Only the fields specified will be updated
 
 try {
     $result = $apiInstance->updateEmailTemplate($body);
@@ -333,11 +333,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\ApiEmailTemplateModel**](../Model/ApiEmailTemplateModel.md)| Only the fields specified will be updated |
+ **body** | [**\IterableIA\Iterable\Model\ApiEmailTemplateModel**](../Model/ApiEmailTemplateModel.md)| Only the fields specified will be updated |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePushTemplate**
-> \IterableIA\Model\IterableApiResponse updatePushTemplate($body)
+> \IterableIA\Iterable\Model\IterableApiResponse updatePushTemplate($body)
 
 Update push template
 
@@ -360,17 +360,17 @@ Update push template
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\ApiPushTemplateModel(); // \IterableIA\Model\ApiPushTemplateModel | Only the fields specified will be updated
+$body = new \IterableIA\Iterable\Model\ApiPushTemplateModel(); // \IterableIA\Iterable\Model\ApiPushTemplateModel | Only the fields specified will be updated
 
 try {
     $result = $apiInstance->updatePushTemplate($body);
@@ -385,11 +385,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\ApiPushTemplateModel**](../Model/ApiPushTemplateModel.md)| Only the fields specified will be updated |
+ **body** | [**\IterableIA\Iterable\Model\ApiPushTemplateModel**](../Model/ApiPushTemplateModel.md)| Only the fields specified will be updated |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSMSTemplate**
-> \IterableIA\Model\IterableApiResponse updateSMSTemplate($body)
+> \IterableIA\Iterable\Model\IterableApiResponse updateSMSTemplate($body)
 
 Update SMS template
 
@@ -412,17 +412,17 @@ Update SMS template
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\ApiSMSTemplateModel(); // \IterableIA\Model\ApiSMSTemplateModel | Only the fields specified will be updated
+$body = new \IterableIA\Iterable\Model\ApiSMSTemplateModel(); // \IterableIA\Iterable\Model\ApiSMSTemplateModel | Only the fields specified will be updated
 
 try {
     $result = $apiInstance->updateSMSTemplate($body);
@@ -437,11 +437,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\ApiSMSTemplateModel**](../Model/ApiSMSTemplateModel.md)| Only the fields specified will be updated |
+ **body** | [**\IterableIA\Iterable\Model\ApiSMSTemplateModel**](../Model/ApiSMSTemplateModel.md)| Only the fields specified will be updated |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -455,7 +455,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **upsertEmailTemplate**
-> \IterableIA\Model\IterableApiResponse upsertEmailTemplate($body)
+> \IterableIA\Iterable\Model\IterableApiResponse upsertEmailTemplate($body)
 
 Create email template
 
@@ -466,17 +466,17 @@ Create email template if it doesn't exist already, otherwise update all email te
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UpsertEmailTemplateModel(); // \IterableIA\Model\UpsertEmailTemplateModel | Only the fields specified will be updated
+$body = new \IterableIA\Iterable\Model\UpsertEmailTemplateModel(); // \IterableIA\Iterable\Model\UpsertEmailTemplateModel | Only the fields specified will be updated
 
 try {
     $result = $apiInstance->upsertEmailTemplate($body);
@@ -491,11 +491,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UpsertEmailTemplateModel**](../Model/UpsertEmailTemplateModel.md)| Only the fields specified will be updated |
+ **body** | [**\IterableIA\Iterable\Model\UpsertEmailTemplateModel**](../Model/UpsertEmailTemplateModel.md)| Only the fields specified will be updated |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -509,7 +509,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **upsertPushTemplate**
-> \IterableIA\Model\IterableApiResponse upsertPushTemplate($body)
+> \IterableIA\Iterable\Model\IterableApiResponse upsertPushTemplate($body)
 
 Create a push template
 
@@ -520,17 +520,17 @@ Create a push template if it doesn't exist, otherwise update all push templates 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UpsertPushTemplateModel(); // \IterableIA\Model\UpsertPushTemplateModel | Only the fields specified will be updated
+$body = new \IterableIA\Iterable\Model\UpsertPushTemplateModel(); // \IterableIA\Iterable\Model\UpsertPushTemplateModel | Only the fields specified will be updated
 
 try {
     $result = $apiInstance->upsertPushTemplate($body);
@@ -545,11 +545,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UpsertPushTemplateModel**](../Model/UpsertPushTemplateModel.md)| Only the fields specified will be updated |
+ **body** | [**\IterableIA\Iterable\Model\UpsertPushTemplateModel**](../Model/UpsertPushTemplateModel.md)| Only the fields specified will be updated |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -563,7 +563,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **upsertSMSTemplate**
-> \IterableIA\Model\IterableApiResponse upsertSMSTemplate($body)
+> \IterableIA\Iterable\Model\IterableApiResponse upsertSMSTemplate($body)
 
 Create an SMS template
 
@@ -574,17 +574,17 @@ Create an SMS template if it doesn't exist yet, otherwise update all SMS templat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\TemplatesApi(
+$apiInstance = new IterableIA\Iterable\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UpsertSMSTemplateModel(); // \IterableIA\Model\UpsertSMSTemplateModel | Only the fields specified will be updated
+$body = new \IterableIA\Iterable\Model\UpsertSMSTemplateModel(); // \IterableIA\Iterable\Model\UpsertSMSTemplateModel | Only the fields specified will be updated
 
 try {
     $result = $apiInstance->upsertSMSTemplate($body);
@@ -599,11 +599,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UpsertSMSTemplateModel**](../Model/UpsertSMSTemplateModel.md)| Only the fields specified will be updated |
+ **body** | [**\IterableIA\Iterable\Model\UpsertSMSTemplateModel**](../Model/UpsertSMSTemplateModel.md)| Only the fields specified will be updated |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 

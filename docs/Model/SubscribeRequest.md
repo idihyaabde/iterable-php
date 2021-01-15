@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **list_id** | **int** |  | 
-**subscribers** | [**\IterableIA\Model\OptionalApiUser[]**](OptionalApiUser.md) |  | 
+**subscribers** | [**\IterableIA\Iterable\Model\OptionalApiUser[]**](OptionalApiUser.md) |  | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

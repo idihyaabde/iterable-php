@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | [**\IterableIA\Model\ApiUser**](ApiUser.md) |  | [optional] 
+**user** | [**\IterableIA\Iterable\Model\ApiUser**](ApiUser.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

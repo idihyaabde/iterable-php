@@ -1,4 +1,4 @@
-# IterableIA\MessageTypesApi
+# IterableIA\Iterable\MessageTypesApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**messageTypes**](MessageTypesApi.md#messagetypes) | **GET** /api/messageTypes | List message types
 
 # **messageTypes**
-> \IterableIA\Model\MessageTypesResponse messageTypes()
+> \IterableIA\Iterable\Model\MessageTypesResponse messageTypes()
 
 List message types
 
@@ -18,11 +18,11 @@ List all message types within a project. <b>Rate limit</b>: 100 requests/second,
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MessageTypesApi(
+$apiInstance = new IterableIA\Iterable\Api\MessageTypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\IterableIA\Model\MessageTypesResponse**](../Model/MessageTypesResponse.md)
+[**\IterableIA\Iterable\Model\MessageTypesResponse**](../Model/MessageTypesResponse.md)
 
 ### Authorization
 

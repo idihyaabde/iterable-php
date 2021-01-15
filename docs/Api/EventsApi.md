@@ -1,4 +1,4 @@
-# IterableIA\EventsApi
+# IterableIA\Iterable\EventsApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**userEvents**](EventsApi.md#userevents) | **GET** /api/events/{email} | Get user events
 
 # **inAppConsume**
-> \IterableIA\Model\IterableApiResponse inAppConsume($body)
+> \IterableIA\Iterable\Model\IterableApiResponse inAppConsume($body)
 
 Consume an in-app notification
 
@@ -23,17 +23,17 @@ Consume an in-app notification
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\InAppEventRequest(); // \IterableIA\Model\InAppEventRequest | In-app notification to consume
+$body = new \IterableIA\Iterable\Model\InAppEventRequest(); // \IterableIA\Iterable\Model\InAppEventRequest | In-app notification to consume
 
 try {
     $result = $apiInstance->inAppConsume($body);
@@ -48,11 +48,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\InAppEventRequest**](../Model/InAppEventRequest.md)| In-app notification to consume |
+ **body** | [**\IterableIA\Iterable\Model\InAppEventRequest**](../Model/InAppEventRequest.md)| In-app notification to consume |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **track**
-> \IterableIA\Model\IterableApiResponse track($body)
+> \IterableIA\Iterable\Model\IterableApiResponse track($body)
 
 Track an event
 
@@ -77,17 +77,17 @@ Events are created asynchronously and <b>processed separately from single event 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\TrackRequest(); // \IterableIA\Model\TrackRequest | Event to track
+$body = new \IterableIA\Iterable\Model\TrackRequest(); // \IterableIA\Iterable\Model\TrackRequest | Event to track
 
 try {
     $result = $apiInstance->track($body);
@@ -102,11 +102,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\TrackRequest**](../Model/TrackRequest.md)| Event to track |
+ **body** | [**\IterableIA\Iterable\Model\TrackRequest**](../Model/TrackRequest.md)| Event to track |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **trackBulk**
-> \IterableIA\Model\BulkTrackResponse trackBulk($body)
+> \IterableIA\Iterable\Model\BulkTrackResponse trackBulk($body)
 
 Bulk track events
 
@@ -131,17 +131,17 @@ Events are created asynchronously and <b>processed separately from single event 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\BulkTrackRequest(); // \IterableIA\Model\BulkTrackRequest | Events to track
+$body = new \IterableIA\Iterable\Model\BulkTrackRequest(); // \IterableIA\Iterable\Model\BulkTrackRequest | Events to track
 
 try {
     $result = $apiInstance->trackBulk($body);
@@ -156,11 +156,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\BulkTrackRequest**](../Model/BulkTrackRequest.md)| Events to track |
+ **body** | [**\IterableIA\Iterable\Model\BulkTrackRequest**](../Model/BulkTrackRequest.md)| Events to track |
 
 ### Return type
 
-[**\IterableIA\Model\BulkTrackResponse**](../Model/BulkTrackResponse.md)
+[**\IterableIA\Iterable\Model\BulkTrackResponse**](../Model/BulkTrackResponse.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **trackInAppClick**
-> \IterableIA\Model\IterableApiResponse trackInAppClick($body)
+> \IterableIA\Iterable\Model\IterableApiResponse trackInAppClick($body)
 
 Track an in-app click
 
@@ -183,17 +183,17 @@ Track an in-app click
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\InAppClickRequest(); // \IterableIA\Model\InAppClickRequest | In-app click to track
+$body = new \IterableIA\Iterable\Model\InAppClickRequest(); // \IterableIA\Iterable\Model\InAppClickRequest | In-app click to track
 
 try {
     $result = $apiInstance->trackInAppClick($body);
@@ -208,11 +208,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\InAppClickRequest**](../Model/InAppClickRequest.md)| In-app click to track |
+ **body** | [**\IterableIA\Iterable\Model\InAppClickRequest**](../Model/InAppClickRequest.md)| In-app click to track |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **trackInAppOpen**
-> \IterableIA\Model\IterableApiResponse trackInAppOpen($body)
+> \IterableIA\Iterable\Model\IterableApiResponse trackInAppOpen($body)
 
 Track an in-app open
 
@@ -235,17 +235,17 @@ Track an in-app open
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\InAppEventRequest(); // \IterableIA\Model\InAppEventRequest | In-app open to track
+$body = new \IterableIA\Iterable\Model\InAppEventRequest(); // \IterableIA\Iterable\Model\InAppEventRequest | In-app open to track
 
 try {
     $result = $apiInstance->trackInAppOpen($body);
@@ -260,11 +260,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\InAppEventRequest**](../Model/InAppEventRequest.md)| In-app open to track |
+ **body** | [**\IterableIA\Iterable\Model\InAppEventRequest**](../Model/InAppEventRequest.md)| In-app open to track |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **trackPushOpen**
-> \IterableIA\Model\IterableApiResponse trackPushOpen($body)
+> \IterableIA\Iterable\Model\IterableApiResponse trackPushOpen($body)
 
 Track a mobile push open
 
@@ -287,17 +287,17 @@ Track a mobile push open
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\TrackPushOpenRequest(); // \IterableIA\Model\TrackPushOpenRequest | Push open to track
+$body = new \IterableIA\Iterable\Model\TrackPushOpenRequest(); // \IterableIA\Iterable\Model\TrackPushOpenRequest | Push open to track
 
 try {
     $result = $apiInstance->trackPushOpen($body);
@@ -312,11 +312,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\TrackPushOpenRequest**](../Model/TrackPushOpenRequest.md)| Push open to track |
+ **body** | [**\IterableIA\Iterable\Model\TrackPushOpenRequest**](../Model/TrackPushOpenRequest.md)| Push open to track |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **trackWebPushClick**
-> \IterableIA\Model\IterableApiResponse trackWebPushClick($body)
+> \IterableIA\Iterable\Model\IterableApiResponse trackWebPushClick($body)
 
 Track a web push click
 
@@ -339,17 +339,17 @@ Track a web push click
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\WebPushClickEventRequest(); // \IterableIA\Model\WebPushClickEventRequest | Web Push click to track
+$body = new \IterableIA\Iterable\Model\WebPushClickEventRequest(); // \IterableIA\Iterable\Model\WebPushClickEventRequest | Web Push click to track
 
 try {
     $result = $apiInstance->trackWebPushClick($body);
@@ -364,11 +364,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\WebPushClickEventRequest**](../Model/WebPushClickEventRequest.md)| Web Push click to track |
+ **body** | [**\IterableIA\Iterable\Model\WebPushClickEventRequest**](../Model/WebPushClickEventRequest.md)| Web Push click to track |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -382,7 +382,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userEvents**
-> \IterableIA\Model\GetEventsResponse userEvents($email, $limit)
+> \IterableIA\Iterable\Model\GetEventsResponse userEvents($email, $limit)
 
 Get user events
 
@@ -393,11 +393,11 @@ Get events for a specific user. <b>Rate limit</b>: 100 requests/second, per proj
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\EventsApi(
+$apiInstance = new IterableIA\Iterable\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -424,7 +424,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\GetEventsResponse**](../Model/GetEventsResponse.md)
+[**\IterableIA\Iterable\Model\GetEventsResponse**](../Model/GetEventsResponse.md)
 
 ### Authorization
 

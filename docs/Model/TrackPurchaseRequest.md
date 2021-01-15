@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | Optional purchase id. If a purchase exists with that id, the purchase will be updated. If none is specified, a new id will automatically be generated and returned. | [optional] 
-**user** | [**\IterableIA\Model\ApiUserUpdateRequest**](ApiUserUpdateRequest.md) |  | 
-**items** | [**\IterableIA\Model\CommerceItem[]**](CommerceItem.md) |  | 
+**user** | [**\IterableIA\Iterable\Model\ApiUserUpdateRequest**](ApiUserUpdateRequest.md) |  | 
+**items** | [**\IterableIA\Iterable\Model\CommerceItem[]**](CommerceItem.md) |  | 
 **campaign_id** | **int** |  | [optional] 
 **template_id** | **int** | Used in AB testing attribution | [optional] 
 **total** | **double** | Total order dollar amount | 

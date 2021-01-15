@@ -1,4 +1,4 @@
-# IterableIA\UsersApi
+# IterableIA\Iterable\UsersApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 [**updateUser**](UsersApi.md#updateuser) | **POST** /api/users/update | Update user data
 
 # **bulkUpdateSubscriptions**
-> \IterableIA\Model\BulkUpdateSubscriptionsResponse bulkUpdateSubscriptions($body)
+> \IterableIA\Iterable\Model\BulkUpdateSubscriptionsResponse bulkUpdateSubscriptions($body)
 
 Bulk update user subscriptions
 
@@ -36,17 +36,17 @@ Bulk update user subscriptions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\BulkUpdateSubscriptionsRequest(); // \IterableIA\Model\BulkUpdateSubscriptionsRequest | Bulk subscriptions to update
+$body = new \IterableIA\Iterable\Model\BulkUpdateSubscriptionsRequest(); // \IterableIA\Iterable\Model\BulkUpdateSubscriptionsRequest | Bulk subscriptions to update
 
 try {
     $result = $apiInstance->bulkUpdateSubscriptions($body);
@@ -61,11 +61,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\BulkUpdateSubscriptionsRequest**](../Model/BulkUpdateSubscriptionsRequest.md)| Bulk subscriptions to update |
+ **body** | [**\IterableIA\Iterable\Model\BulkUpdateSubscriptionsRequest**](../Model/BulkUpdateSubscriptionsRequest.md)| Bulk subscriptions to update |
 
 ### Return type
 
-[**\IterableIA\Model\BulkUpdateSubscriptionsResponse**](../Model/BulkUpdateSubscriptionsResponse.md)
+[**\IterableIA\Iterable\Model\BulkUpdateSubscriptionsResponse**](../Model/BulkUpdateSubscriptionsResponse.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bulkUpdateUser**
-> \IterableIA\Model\ListResponse bulkUpdateUser($body)
+> \IterableIA\Iterable\Model\ListResponse bulkUpdateUser($body)
 
 Bulk update user data
 
@@ -90,17 +90,17 @@ Bulk update user data. This will add the data if it doesn't exist yet. Data will
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\BulkUpdateUsersRequest(); // \IterableIA\Model\BulkUpdateUsersRequest | Users to update
+$body = new \IterableIA\Iterable\Model\BulkUpdateUsersRequest(); // \IterableIA\Iterable\Model\BulkUpdateUsersRequest | Users to update
 
 try {
     $result = $apiInstance->bulkUpdateUser($body);
@@ -115,11 +115,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\BulkUpdateUsersRequest**](../Model/BulkUpdateUsersRequest.md)| Users to update |
+ **body** | [**\IterableIA\Iterable\Model\BulkUpdateUsersRequest**](../Model/BulkUpdateUsersRequest.md)| Users to update |
 
 ### Return type
 
-[**\IterableIA\Model\ListResponse**](../Model/ListResponse.md)
+[**\IterableIA\Iterable\Model\ListResponse**](../Model/ListResponse.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteUser**
-> \IterableIA\Model\IterableApiResponse deleteUser($user_id)
+> \IterableIA\Iterable\Model\IterableApiResponse deleteUser($user_id)
 
 Delete user by userId
 
@@ -144,11 +144,11 @@ Delete user by a userId. This will delete multiple users if they happen to share
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteUserByEmail**
-> \IterableIA\Model\IterableApiResponse deleteUserByEmail($email)
+> \IterableIA\Iterable\Model\IterableApiResponse deleteUserByEmail($email)
 
 Delete a user by email
 
@@ -198,11 +198,11 @@ Delete a specific user by email address. <b>Rate limit</b>: 3 requests/second, p
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **disableDevice**
-> \IterableIA\Model\IterableApiResponse disableDevice($body)
+> \IterableIA\Iterable\Model\IterableApiResponse disableDevice($body)
 
 Disable pushes to a mobile device
 
@@ -252,17 +252,17 @@ Manually disable push notifications to a device until it comes online again.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\DisableDeviceRequest(); // \IterableIA\Model\DisableDeviceRequest | Request to disable device
+$body = new \IterableIA\Iterable\Model\DisableDeviceRequest(); // \IterableIA\Iterable\Model\DisableDeviceRequest | Request to disable device
 
 try {
     $result = $apiInstance->disableDevice($body);
@@ -277,11 +277,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\DisableDeviceRequest**](../Model/DisableDeviceRequest.md)| Request to disable device | [optional]
+ **body** | [**\IterableIA\Iterable\Model\DisableDeviceRequest**](../Model/DisableDeviceRequest.md)| Request to disable device | [optional]
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -295,7 +295,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **forget**
-> \IterableIA\Model\IterableApiResponse forget($body)
+> \IterableIA\Iterable\Model\IterableApiResponse forget($body)
 
 Forget a user in compliance with GDPR
 
@@ -306,17 +306,17 @@ Add user to the forgotten users blacklist. Existing data is retained but new dat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UserRequest(); // \IterableIA\Model\UserRequest | user's email to be added to blacklist.
+$body = new \IterableIA\Iterable\Model\UserRequest(); // \IterableIA\Iterable\Model\UserRequest | user's email to be added to blacklist.
 
 try {
     $result = $apiInstance->forget($body);
@@ -331,11 +331,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UserRequest**](../Model/UserRequest.md)| user&#x27;s email to be added to blacklist. |
+ **body** | [**\IterableIA\Iterable\Model\UserRequest**](../Model/UserRequest.md)| user&#x27;s email to be added to blacklist. |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getForgottenUsers**
-> \IterableIA\Model\GetForgottenUserEmailsResponse getForgottenUsers()
+> \IterableIA\Iterable\Model\GetForgottenUserEmailsResponse getForgottenUsers()
 
 Get forgotten users in compliance with GDPR
 
@@ -360,11 +360,11 @@ Get all user emails that are currently in the blacklist.<br><b>Rate limit</b>: 3
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -385,7 +385,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\IterableIA\Model\GetForgottenUserEmailsResponse**](../Model/GetForgottenUserEmailsResponse.md)
+[**\IterableIA\Iterable\Model\GetForgottenUserEmailsResponse**](../Model/GetForgottenUserEmailsResponse.md)
 
 ### Authorization
 
@@ -399,7 +399,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSentMessages**
-> \IterableIA\Model\GetSentMessagesResponse getSentMessages($email, $user_id, $limit, $campaign_id, $start_date_time, $end_date_time, $exclude_blast_campaigns, $message_medium)
+> \IterableIA\Iterable\Model\GetSentMessagesResponse getSentMessages($email, $user_id, $limit, $campaign_id, $start_date_time, $end_date_time, $exclude_blast_campaigns, $message_medium)
 
 Get messages sent to a user
 
@@ -410,11 +410,11 @@ Get messages sent to a user by email address or user ID. Returns 10 by default, 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -453,7 +453,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\GetSentMessagesResponse**](../Model/GetSentMessagesResponse.md)
+[**\IterableIA\Iterable\Model\GetSentMessagesResponse**](../Model/GetSentMessagesResponse.md)
 
 ### Authorization
 
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUser**
-> \IterableIA\Model\UserResponse getUser($user_id)
+> \IterableIA\Iterable\Model\UserResponse getUser($user_id)
 
 Get a user by userId
 
@@ -478,11 +478,11 @@ Get a user by userId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\UserResponse**](../Model/UserResponse.md)
+[**\IterableIA\Iterable\Model\UserResponse**](../Model/UserResponse.md)
 
 ### Authorization
 
@@ -521,7 +521,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUserByEmail**
-> \IterableIA\Model\UserResponse getUserByEmail($email)
+> \IterableIA\Iterable\Model\UserResponse getUserByEmail($email)
 
 Get a user by email
 
@@ -532,11 +532,11 @@ Get a user by their email address. <b>Rate limit</b>: 3 requests/second, per pro
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -561,7 +561,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\UserResponse**](../Model/UserResponse.md)
+[**\IterableIA\Iterable\Model\UserResponse**](../Model/UserResponse.md)
 
 ### Authorization
 
@@ -575,7 +575,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUserByEmail2**
-> \IterableIA\Model\UserResponse getUserByEmail2($email)
+> \IterableIA\Iterable\Model\UserResponse getUserByEmail2($email)
 
 Get a user by email
 
@@ -586,11 +586,11 @@ Get a user by email
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -615,7 +615,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\UserResponse**](../Model/UserResponse.md)
+[**\IterableIA\Iterable\Model\UserResponse**](../Model/UserResponse.md)
 
 ### Authorization
 
@@ -629,7 +629,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUserByUserId**
-> \IterableIA\Model\UserResponse getUserByUserId($user_id)
+> \IterableIA\Iterable\Model\UserResponse getUserByUserId($user_id)
 
 Get a user by userId
 
@@ -640,11 +640,11 @@ Get a user by your custom userId. <b>Rate limit</b>: 3 requests/second, per proj
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -669,7 +669,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\UserResponse**](../Model/UserResponse.md)
+[**\IterableIA\Iterable\Model\UserResponse**](../Model/UserResponse.md)
 
 ### Authorization
 
@@ -683,7 +683,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUserFields**
-> \IterableIA\Model\GetUserFieldsResponse getUserFields()
+> \IterableIA\Iterable\Model\GetUserFieldsResponse getUserFields()
 
 Get all user fields
 
@@ -694,11 +694,11 @@ Get all user fields within a project. <b>Rate limit</b>: 3 requests/second, per 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -719,7 +719,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\IterableIA\Model\GetUserFieldsResponse**](../Model/GetUserFieldsResponse.md)
+[**\IterableIA\Iterable\Model\GetUserFieldsResponse**](../Model/GetUserFieldsResponse.md)
 
 ### Authorization
 
@@ -733,7 +733,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **registerBrowserToken**
-> \IterableIA\Model\IterableApiResponse registerBrowserToken($body)
+> \IterableIA\Iterable\Model\IterableApiResponse registerBrowserToken($body)
 
 Register a browser token for web push
 
@@ -742,17 +742,17 @@ Register a browser token for web push
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\RegisterBrowserTokenRequest(); // \IterableIA\Model\RegisterBrowserTokenRequest | Request to register browser
+$body = new \IterableIA\Iterable\Model\RegisterBrowserTokenRequest(); // \IterableIA\Iterable\Model\RegisterBrowserTokenRequest | Request to register browser
 
 try {
     $result = $apiInstance->registerBrowserToken($body);
@@ -767,11 +767,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\RegisterBrowserTokenRequest**](../Model/RegisterBrowserTokenRequest.md)| Request to register browser |
+ **body** | [**\IterableIA\Iterable\Model\RegisterBrowserTokenRequest**](../Model/RegisterBrowserTokenRequest.md)| Request to register browser |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -785,7 +785,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **registerDeviceToken**
-> \IterableIA\Model\IterableApiResponse registerDeviceToken($body)
+> \IterableIA\Iterable\Model\IterableApiResponse registerDeviceToken($body)
 
 Register a device token for push
 
@@ -796,17 +796,17 @@ Register a device token for push. This will add the data if it doesn't exist yet
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\RegisterDeviceTokenRequest(); // \IterableIA\Model\RegisterDeviceTokenRequest | Request to register device
+$body = new \IterableIA\Iterable\Model\RegisterDeviceTokenRequest(); // \IterableIA\Iterable\Model\RegisterDeviceTokenRequest | Request to register device
 
 try {
     $result = $apiInstance->registerDeviceToken($body);
@@ -821,11 +821,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\RegisterDeviceTokenRequest**](../Model/RegisterDeviceTokenRequest.md)| Request to register device |
+ **body** | [**\IterableIA\Iterable\Model\RegisterDeviceTokenRequest**](../Model/RegisterDeviceTokenRequest.md)| Request to register device |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -839,7 +839,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **unforget**
-> \IterableIA\Model\IterableApiResponse unforget($body)
+> \IterableIA\Iterable\Model\IterableApiResponse unforget($body)
 
 Unforget a user in compliance with GDPR
 
@@ -850,17 +850,17 @@ Remove user from forgotten users blacklist. New data for this user will now be a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UserRequest(); // \IterableIA\Model\UserRequest | user's email to be removed from blacklist.
+$body = new \IterableIA\Iterable\Model\UserRequest(); // \IterableIA\Iterable\Model\UserRequest | user's email to be removed from blacklist.
 
 try {
     $result = $apiInstance->unforget($body);
@@ -875,11 +875,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UserRequest**](../Model/UserRequest.md)| user&#x27;s email to be removed from blacklist. |
+ **body** | [**\IterableIA\Iterable\Model\UserRequest**](../Model/UserRequest.md)| user&#x27;s email to be removed from blacklist. |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -893,7 +893,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateEmail**
-> \IterableIA\Model\IterableApiResponse updateEmail($body)
+> \IterableIA\Iterable\Model\IterableApiResponse updateEmail($body)
 
 Update user email
 
@@ -904,17 +904,17 @@ Change a user's email address. All profile data and events will be migrated to t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UpdateEmailRequest(); // \IterableIA\Model\UpdateEmailRequest | Update a user's email. All profile data and events will be migrated.
+$body = new \IterableIA\Iterable\Model\UpdateEmailRequest(); // \IterableIA\Iterable\Model\UpdateEmailRequest | Update a user's email. All profile data and events will be migrated.
 
 try {
     $result = $apiInstance->updateEmail($body);
@@ -929,11 +929,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UpdateEmailRequest**](../Model/UpdateEmailRequest.md)| Update a user&#x27;s email. All profile data and events will be migrated. |
+ **body** | [**\IterableIA\Iterable\Model\UpdateEmailRequest**](../Model/UpdateEmailRequest.md)| Update a user&#x27;s email. All profile data and events will be migrated. |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -947,7 +947,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSubscriptions**
-> \IterableIA\Model\IterableApiResponse updateSubscriptions($body)
+> \IterableIA\Iterable\Model\IterableApiResponse updateSubscriptions($body)
 
 Update user subscriptions
 
@@ -958,17 +958,17 @@ Update user subscriptions. <b>NOTE</b>: Overwrites existing data if the field is
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\UpdateSubscriptionsRequest(); // \IterableIA\Model\UpdateSubscriptionsRequest | Subscriptions to update
+$body = new \IterableIA\Iterable\Model\UpdateSubscriptionsRequest(); // \IterableIA\Iterable\Model\UpdateSubscriptionsRequest | Subscriptions to update
 
 try {
     $result = $apiInstance->updateSubscriptions($body);
@@ -983,11 +983,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\UpdateSubscriptionsRequest**](../Model/UpdateSubscriptionsRequest.md)| Subscriptions to update |
+ **body** | [**\IterableIA\Iterable\Model\UpdateSubscriptionsRequest**](../Model/UpdateSubscriptionsRequest.md)| Subscriptions to update |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -1001,7 +1001,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUser**
-> \IterableIA\Model\IterableApiResponse updateUser($body)
+> \IterableIA\Iterable\Model\IterableApiResponse updateUser($body)
 
 Update user data
 
@@ -1012,17 +1012,17 @@ Update user data or adds a user if none exists. Data is merged - missing fields 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\UsersApi(
+$apiInstance = new IterableIA\Iterable\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\ApiUserUpdateRequest(); // \IterableIA\Model\ApiUserUpdateRequest | user object
+$body = new \IterableIA\Iterable\Model\ApiUserUpdateRequest(); // \IterableIA\Iterable\Model\ApiUserUpdateRequest | user object
 
 try {
     $result = $apiInstance->updateUser($body);
@@ -1037,11 +1037,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\ApiUserUpdateRequest**](../Model/ApiUserUpdateRequest.md)| user object |
+ **body** | [**\IterableIA\Iterable\Model\ApiUserUpdateRequest**](../Model/ApiUserUpdateRequest.md)| user object |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 

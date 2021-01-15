@@ -1,4 +1,4 @@
-# IterableIA\MetadataApi
+# IterableIA\Iterable\MetadataApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**put**](MetadataApi.md#put) | **PUT** /api/metadata/{table}/{key} | Create or replace metadata
 
 # **callList**
-> \IterableIA\Model\Listing callList($table, $next_marker)
+> \IterableIA\Iterable\Model\Listing callList($table, $next_marker)
 
 List keys in a table
 
@@ -21,11 +21,11 @@ List keys in a table
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MetadataApi(
+$apiInstance = new IterableIA\Iterable\Api\MetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\Listing**](../Model/Listing.md)
+[**\IterableIA\Iterable\Model\Listing**](../Model/Listing.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteMetadataKey**
-> \IterableIA\Model\IterableApiResponse deleteMetadataKey($table, $key)
+> \IterableIA\Iterable\Model\IterableApiResponse deleteMetadataKey($table, $key)
 
 Delete a single metadata key/value
 
@@ -77,11 +77,11 @@ Asynchronous. Deletes the specified item from the table. 200 response indicates 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MetadataApi(
+$apiInstance = new IterableIA\Iterable\Api\MetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteMetadataTable**
-> \IterableIA\Model\IterableApiResponse deleteMetadataTable($table)
+> \IterableIA\Iterable\Model\IterableApiResponse deleteMetadataTable($table)
 
 Delete a table
 
@@ -133,11 +133,11 @@ Asynchronous. Deletes the table. 200 response indicates a valid request that wil
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MetadataApi(
+$apiInstance = new IterableIA\Iterable\Api\MetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **get**
-> \IterableIA\Model\MetadataWithProperties get($table, $key)
+> \IterableIA\Iterable\Model\MetadataWithProperties get($table, $key)
 
 Get the metadata value of a single key
 
@@ -185,11 +185,11 @@ Get the metadata value of a single key
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MetadataApi(
+$apiInstance = new IterableIA\Iterable\Api\MetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Model\MetadataWithProperties**](../Model/MetadataWithProperties.md)
+[**\IterableIA\Iterable\Model\MetadataWithProperties**](../Model/MetadataWithProperties.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listTables**
-> \IterableIA\Model\ListMetadataTablesResponse listTables()
+> \IterableIA\Iterable\Model\ListMetadataTablesResponse listTables()
 
 List available tables
 
@@ -239,11 +239,11 @@ List available tables
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MetadataApi(
+$apiInstance = new IterableIA\Iterable\Api\MetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -264,7 +264,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\IterableIA\Model\ListMetadataTablesResponse**](../Model/ListMetadataTablesResponse.md)
+[**\IterableIA\Iterable\Model\ListMetadataTablesResponse**](../Model/ListMetadataTablesResponse.md)
 
 ### Authorization
 
@@ -278,7 +278,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **put**
-> \IterableIA\Model\IterableApiResponse put($body, $table, $key)
+> \IterableIA\Iterable\Model\IterableApiResponse put($body, $table, $key)
 
 Create or replace metadata
 
@@ -289,17 +289,17 @@ Asynchronous. Creates or replaces the item associated with the specified key. 20
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Api\MetadataApi(
+$apiInstance = new IterableIA\Iterable\Api\MetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Model\PutMetadataRequest(); // \IterableIA\Model\PutMetadataRequest | Metadata properties
+$body = new \IterableIA\Iterable\Model\PutMetadataRequest(); // \IterableIA\Iterable\Model\PutMetadataRequest | Metadata properties
 $table = "table_example"; // string | Table name [Alphanumeric, case insensitive]
 $key = "key_example"; // string | Metadata key [Alphanumeric, case sensitive]
 
@@ -316,13 +316,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Model\PutMetadataRequest**](../Model/PutMetadataRequest.md)| Metadata properties |
+ **body** | [**\IterableIA\Iterable\Model\PutMetadataRequest**](../Model/PutMetadataRequest.md)| Metadata properties |
  **table** | **string**| Table name [Alphanumeric, case insensitive] |
  **key** | **string**| Metadata key [Alphanumeric, case sensitive] |
 
 ### Return type
 
-[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
