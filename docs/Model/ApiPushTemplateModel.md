@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **message** | **string** | Push message | [optional] 
 **payload** | **object** | Payload to send with push notification | [optional] 
 **badge** | **string** | Badge to set for push notification | [optional] 
-**locale** | [**\IterableIA\Iterable\Model\IterableLocale**](IterableLocale.md) |  | [optional] 
+**locale** | [**\IterableIA\Model\IterableLocale**](IterableLocale.md) |  | [optional] 
 **message_type_id** | **int** | Message Type Id | [optional] 
 **sound** | **string** | Sound | [optional] 
-**deeplink** | [**\IterableIA\Iterable\Model\DeeplinkURI**](DeeplinkURI.md) |  | [optional] 
+**deeplink** | [**\IterableIA\Model\DeeplinkURI**](DeeplinkURI.md) |  | [optional] 
 **client_template_id** | **string** | Client template Id. Used as a secondary key to reference the template | [optional] 
 **campaign_id** | **float** | Campaign ID | [optional] 
 

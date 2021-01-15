@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * ListsApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class ListsApi
      *
      * Create a static list
      *
-     * @param  \IterableIA\Iterable\Model\CreateListRequest $body name (required)
+     * @param  \IterableIA\Model\CreateListRequest $body name (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\CreateListResponse
+     * @return \IterableIA\Model\CreateListResponse
      */
     public function create($body)
     {
@@ -108,15 +108,15 @@ class ListsApi
      *
      * Create a static list
      *
-     * @param  \IterableIA\Iterable\Model\CreateListRequest $body name (required)
+     * @param  \IterableIA\Model\CreateListRequest $body name (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\CreateListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\CreateListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\CreateListResponse';
+        $returnType = '\IterableIA\Model\CreateListResponse';
         $request = $this->createRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class ListsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\CreateListResponse',
+                        '\IterableIA\Model\CreateListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class ListsApi
      *
      * Create a static list
      *
-     * @param  \IterableIA\Iterable\Model\CreateListRequest $body name (required)
+     * @param  \IterableIA\Model\CreateListRequest $body name (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class ListsApi
      *
      * Create a static list
      *
-     * @param  \IterableIA\Iterable\Model\CreateListRequest $body name (required)
+     * @param  \IterableIA\Model\CreateListRequest $body name (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\CreateListResponse';
+        $returnType = '\IterableIA\Model\CreateListResponse';
         $request = $this->createRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class ListsApi
     /**
      * Create request for operation 'create'
      *
-     * @param  \IterableIA\Iterable\Model\CreateListRequest $body name (required)
+     * @param  \IterableIA\Model\CreateListRequest $body name (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -355,9 +355,9 @@ class ListsApi
      *
      * @param  int $list_id list id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function deleteStaticList($list_id)
     {
@@ -372,13 +372,13 @@ class ListsApi
      *
      * @param  int $list_id list id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteStaticListWithHttpInfo($list_id)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->deleteStaticListRequest($list_id);
 
         try {
@@ -430,7 +430,7 @@ class ListsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -472,7 +472,7 @@ class ListsApi
      */
     public function deleteStaticListAsyncWithHttpInfo($list_id)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->deleteStaticListRequest($list_id);
 
         return $this->client
@@ -622,7 +622,7 @@ class ListsApi
      *
      * @param  int $list_id list id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -639,7 +639,7 @@ class ListsApi
      *
      * @param  int $list_id list id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -889,7 +889,7 @@ class ListsApi
      *
      * @param  int $list_id list id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -906,7 +906,7 @@ class ListsApi
      *
      * @param  int $list_id list id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1151,9 +1151,9 @@ class ListsApi
      * Get lists
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\GetListsResponse
+     * @return \IterableIA\Model\GetListsResponse
      */
     public function getLists()
     {
@@ -1167,13 +1167,13 @@ class ListsApi
      * Get lists
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\GetListsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\GetListsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListsWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\GetListsResponse';
+        $returnType = '\IterableIA\Model\GetListsResponse';
         $request = $this->getListsRequest();
 
         try {
@@ -1225,7 +1225,7 @@ class ListsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\GetListsResponse',
+                        '\IterableIA\Model\GetListsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1265,7 +1265,7 @@ class ListsApi
      */
     public function getListsAsyncWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\GetListsResponse';
+        $returnType = '\IterableIA\Model\GetListsResponse';
         $request = $this->getListsRequest();
 
         return $this->client
@@ -1398,11 +1398,11 @@ class ListsApi
      *
      * Add subscribers to list
      *
-     * @param  \IterableIA\Iterable\Model\SubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\SubscribeRequest $body email list id and list of emails (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ListResponse
+     * @return \IterableIA\Model\ListResponse
      */
     public function subscribe($body)
     {
@@ -1415,15 +1415,15 @@ class ListsApi
      *
      * Add subscribers to list
      *
-     * @param  \IterableIA\Iterable\Model\SubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\SubscribeRequest $body email list id and list of emails (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscribeWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\ListResponse';
+        $returnType = '\IterableIA\Model\ListResponse';
         $request = $this->subscribeRequest($body);
 
         try {
@@ -1475,7 +1475,7 @@ class ListsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ListResponse',
+                        '\IterableIA\Model\ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1490,7 +1490,7 @@ class ListsApi
      *
      * Add subscribers to list
      *
-     * @param  \IterableIA\Iterable\Model\SubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\SubscribeRequest $body email list id and list of emails (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1510,14 +1510,14 @@ class ListsApi
      *
      * Add subscribers to list
      *
-     * @param  \IterableIA\Iterable\Model\SubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\SubscribeRequest $body email list id and list of emails (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function subscribeAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\ListResponse';
+        $returnType = '\IterableIA\Model\ListResponse';
         $request = $this->subscribeRequest($body);
 
         return $this->client
@@ -1560,7 +1560,7 @@ class ListsApi
     /**
      * Create request for operation 'subscribe'
      *
-     * @param  \IterableIA\Iterable\Model\SubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\SubscribeRequest $body email list id and list of emails (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1660,11 +1660,11 @@ class ListsApi
      *
      * Remove users from a list
      *
-     * @param  \IterableIA\Iterable\Model\UnsubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\UnsubscribeRequest $body email list id and list of emails (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ListResponse
+     * @return \IterableIA\Model\ListResponse
      */
     public function unsubscribe($body)
     {
@@ -1677,15 +1677,15 @@ class ListsApi
      *
      * Remove users from a list
      *
-     * @param  \IterableIA\Iterable\Model\UnsubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\UnsubscribeRequest $body email list id and list of emails (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function unsubscribeWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\ListResponse';
+        $returnType = '\IterableIA\Model\ListResponse';
         $request = $this->unsubscribeRequest($body);
 
         try {
@@ -1737,7 +1737,7 @@ class ListsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ListResponse',
+                        '\IterableIA\Model\ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1752,7 +1752,7 @@ class ListsApi
      *
      * Remove users from a list
      *
-     * @param  \IterableIA\Iterable\Model\UnsubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\UnsubscribeRequest $body email list id and list of emails (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1772,14 +1772,14 @@ class ListsApi
      *
      * Remove users from a list
      *
-     * @param  \IterableIA\Iterable\Model\UnsubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\UnsubscribeRequest $body email list id and list of emails (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function unsubscribeAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\ListResponse';
+        $returnType = '\IterableIA\Model\ListResponse';
         $request = $this->unsubscribeRequest($body);
 
         return $this->client
@@ -1822,7 +1822,7 @@ class ListsApi
     /**
      * Create request for operation 'unsubscribe'
      *
-     * @param  \IterableIA\Iterable\Model\UnsubscribeRequest $body email list id and list of emails (required)
+     * @param  \IterableIA\Model\UnsubscribeRequest $body email list id and list of emails (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

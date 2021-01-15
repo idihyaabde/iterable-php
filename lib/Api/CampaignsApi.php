@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * CampaignsApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class CampaignsApi
      * List campaign metadata
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\CampaignsResponse
+     * @return \IterableIA\Model\CampaignsResponse
      */
     public function campaigns()
     {
@@ -108,13 +108,13 @@ class CampaignsApi
      * List campaign metadata
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\CampaignsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\CampaignsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function campaignsWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\CampaignsResponse';
+        $returnType = '\IterableIA\Model\CampaignsResponse';
         $request = $this->campaignsRequest();
 
         try {
@@ -166,7 +166,7 @@ class CampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\CampaignsResponse',
+                        '\IterableIA\Model\CampaignsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class CampaignsApi
      */
     public function campaignsAsyncWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\CampaignsResponse';
+        $returnType = '\IterableIA\Model\CampaignsResponse';
         $request = $this->campaignsRequest();
 
         return $this->client
@@ -341,9 +341,9 @@ class CampaignsApi
      *
      * @param  int $id id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\CampaignsResponse
+     * @return \IterableIA\Model\CampaignsResponse
      */
     public function childCampaigns($id)
     {
@@ -358,13 +358,13 @@ class CampaignsApi
      *
      * @param  int $id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\CampaignsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\CampaignsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function childCampaignsWithHttpInfo($id)
     {
-        $returnType = '\IterableIA\Iterable\Model\CampaignsResponse';
+        $returnType = '\IterableIA\Model\CampaignsResponse';
         $request = $this->childCampaignsRequest($id);
 
         try {
@@ -416,7 +416,7 @@ class CampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\CampaignsResponse',
+                        '\IterableIA\Model\CampaignsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -458,7 +458,7 @@ class CampaignsApi
      */
     public function childCampaignsAsyncWithHttpInfo($id)
     {
-        $returnType = '\IterableIA\Iterable\Model\CampaignsResponse';
+        $returnType = '\IterableIA\Model\CampaignsResponse';
         $request = $this->childCampaignsRequest($id);
 
         return $this->client
@@ -606,11 +606,11 @@ class CampaignsApi
      *
      * Create a campaign
      *
-     * @param  \IterableIA\Iterable\Model\CreateCampaignRequest $body Create campaign (required)
+     * @param  \IterableIA\Model\CreateCampaignRequest $body Create campaign (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\CreateCampaignResponse
+     * @return \IterableIA\Model\CreateCampaignResponse
      */
     public function createCampaign($body)
     {
@@ -623,15 +623,15 @@ class CampaignsApi
      *
      * Create a campaign
      *
-     * @param  \IterableIA\Iterable\Model\CreateCampaignRequest $body Create campaign (required)
+     * @param  \IterableIA\Model\CreateCampaignRequest $body Create campaign (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\CreateCampaignResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\CreateCampaignResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createCampaignWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\CreateCampaignResponse';
+        $returnType = '\IterableIA\Model\CreateCampaignResponse';
         $request = $this->createCampaignRequest($body);
 
         try {
@@ -683,7 +683,7 @@ class CampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\CreateCampaignResponse',
+                        '\IterableIA\Model\CreateCampaignResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -698,7 +698,7 @@ class CampaignsApi
      *
      * Create a campaign
      *
-     * @param  \IterableIA\Iterable\Model\CreateCampaignRequest $body Create campaign (required)
+     * @param  \IterableIA\Model\CreateCampaignRequest $body Create campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -718,14 +718,14 @@ class CampaignsApi
      *
      * Create a campaign
      *
-     * @param  \IterableIA\Iterable\Model\CreateCampaignRequest $body Create campaign (required)
+     * @param  \IterableIA\Model\CreateCampaignRequest $body Create campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createCampaignAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\CreateCampaignResponse';
+        $returnType = '\IterableIA\Model\CreateCampaignResponse';
         $request = $this->createCampaignRequest($body);
 
         return $this->client
@@ -768,7 +768,7 @@ class CampaignsApi
     /**
      * Create request for operation 'createCampaign'
      *
-     * @param  \IterableIA\Iterable\Model\CreateCampaignRequest $body Create campaign (required)
+     * @param  \IterableIA\Model\CreateCampaignRequest $body Create campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -873,7 +873,7 @@ class CampaignsApi
      * @param  \DateTime $end_date_time Export ending at (&lt;).  Accepted formats include YYYY-MM-DD and other ISO 8601 formats. (optional)
      * @param  bool $use_new_format use_new_format (optional, default to true)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -893,7 +893,7 @@ class CampaignsApi
      * @param  \DateTime $end_date_time Export ending at (&lt;).  Accepted formats include YYYY-MM-DD and other ISO 8601 formats. (optional)
      * @param  bool $use_new_format (optional, default to true)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1161,11 +1161,11 @@ class CampaignsApi
      *
      * Trigger a campaign
      *
-     * @param  \IterableIA\Iterable\Model\TriggerCampaignRequest $body Trigger campaign (required)
+     * @param  \IterableIA\Model\TriggerCampaignRequest $body Trigger campaign (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function triggerCampaign($body)
     {
@@ -1178,15 +1178,15 @@ class CampaignsApi
      *
      * Trigger a campaign
      *
-     * @param  \IterableIA\Iterable\Model\TriggerCampaignRequest $body Trigger campaign (required)
+     * @param  \IterableIA\Model\TriggerCampaignRequest $body Trigger campaign (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function triggerCampaignWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->triggerCampaignRequest($body);
 
         try {
@@ -1238,7 +1238,7 @@ class CampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1253,7 +1253,7 @@ class CampaignsApi
      *
      * Trigger a campaign
      *
-     * @param  \IterableIA\Iterable\Model\TriggerCampaignRequest $body Trigger campaign (required)
+     * @param  \IterableIA\Model\TriggerCampaignRequest $body Trigger campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1273,14 +1273,14 @@ class CampaignsApi
      *
      * Trigger a campaign
      *
-     * @param  \IterableIA\Iterable\Model\TriggerCampaignRequest $body Trigger campaign (required)
+     * @param  \IterableIA\Model\TriggerCampaignRequest $body Trigger campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function triggerCampaignAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->triggerCampaignRequest($body);
 
         return $this->client
@@ -1323,7 +1323,7 @@ class CampaignsApi
     /**
      * Create request for operation 'triggerCampaign'
      *
-     * @param  \IterableIA\Iterable\Model\TriggerCampaignRequest $body Trigger campaign (required)
+     * @param  \IterableIA\Model\TriggerCampaignRequest $body Trigger campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

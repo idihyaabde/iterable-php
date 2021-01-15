@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * UpsertSMSTemplateModel Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class UpsertSMSTemplateModel implements ModelInterface, ArrayAccess
         'client_template_id' => 'string',
 'name' => 'string',
 'message' => 'string',
-'locale' => '\IterableIA\Iterable\Model\IterableLocale',
+'locale' => '\IterableIA\Model\IterableLocale',
 'message_type_id' => 'int',
 'image_url' => 'string',
 'creator_user_id' => 'string'    ];
@@ -310,7 +310,7 @@ class UpsertSMSTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets locale
      *
-     * @return \IterableIA\Iterable\Model\IterableLocale
+     * @return \IterableIA\Model\IterableLocale
      */
     public function getLocale()
     {
@@ -320,7 +320,7 @@ class UpsertSMSTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets locale
      *
-     * @param \IterableIA\Iterable\Model\IterableLocale $locale locale
+     * @param \IterableIA\Model\IterableLocale $locale locale
      *
      * @return $this
      */

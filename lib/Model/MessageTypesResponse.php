@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * MessageTypesResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class MessageTypesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'message_types' => '\IterableIA\Iterable\Model\MessageTypeDetails[]'    ];
+        'message_types' => '\IterableIA\Model\MessageTypeDetails[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class MessageTypesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets message_types
      *
-     * @return \IterableIA\Iterable\Model\MessageTypeDetails[]
+     * @return \IterableIA\Model\MessageTypeDetails[]
      */
     public function getMessageTypes()
     {
@@ -212,7 +212,7 @@ class MessageTypesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets message_types
      *
-     * @param \IterableIA\Iterable\Model\MessageTypeDetails[] $message_types message_types
+     * @param \IterableIA\Model\MessageTypeDetails[] $message_types message_types
      *
      * @return $this
      */

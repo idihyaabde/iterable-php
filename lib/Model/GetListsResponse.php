@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * GetListsResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class GetListsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lists' => '\IterableIA\Iterable\Model\ListDetails[]'    ];
+        'lists' => '\IterableIA\Model\ListDetails[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class GetListsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets lists
      *
-     * @return \IterableIA\Iterable\Model\ListDetails[]
+     * @return \IterableIA\Model\ListDetails[]
      */
     public function getLists()
     {
@@ -212,7 +212,7 @@ class GetListsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets lists
      *
-     * @param \IterableIA\Iterable\Model\ListDetails[] $lists lists
+     * @param \IterableIA\Model\ListDetails[] $lists lists
      *
      * @return $this
      */

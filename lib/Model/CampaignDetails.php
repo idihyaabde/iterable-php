@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * CampaignDetails Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class CampaignDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'float',
-'created_at' => '\DateTime',
-'updated_at' => '\DateTime',
-'start_at' => '\DateTime',
-'ended_at' => '\DateTime',
+'created_at' => 'int',
+'updated_at' => 'int',
+'start_at' => 'int',
+'ended_at' => 'int',
 'name' => 'string',
 'template_id' => 'float',
 'message_medium' => 'string',
@@ -81,10 +81,10 @@ class CampaignDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'id' => null,
-'created_at' => 'date-time',
-'updated_at' => 'date-time',
-'start_at' => 'date-time',
-'ended_at' => 'date-time',
+'created_at' => 'int64',
+'updated_at' => 'int64',
+'start_at' => 'int64',
+'ended_at' => 'int64',
 'name' => null,
 'template_id' => null,
 'message_medium' => null,
@@ -397,7 +397,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Gets created_at
      *
-     * @return \DateTime
+     * @return int
      */
     public function getCreatedAt()
     {
@@ -407,7 +407,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Sets created_at
      *
-     * @param \DateTime $created_at created_at
+     * @param int $created_at created_at
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Gets updated_at
      *
-     * @return \DateTime
+     * @return int
      */
     public function getUpdatedAt()
     {
@@ -431,7 +431,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Sets updated_at
      *
-     * @param \DateTime $updated_at updated_at
+     * @param int $updated_at updated_at
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Gets start_at
      *
-     * @return \DateTime
+     * @return int
      */
     public function getStartAt()
     {
@@ -455,7 +455,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Sets start_at
      *
-     * @param \DateTime $start_at start_at
+     * @param int $start_at start_at
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Gets ended_at
      *
-     * @return \DateTime
+     * @return int
      */
     public function getEndedAt()
     {
@@ -479,7 +479,7 @@ self::TYPE_TRIGGERED,        ];
     /**
      * Sets ended_at
      *
-     * @param \DateTime $ended_at ended_at
+     * @param int $ended_at ended_at
      *
      * @return $this
      */

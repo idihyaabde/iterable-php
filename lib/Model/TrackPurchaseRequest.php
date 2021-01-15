@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * TrackPurchaseRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class TrackPurchaseRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-'user' => '\IterableIA\Iterable\Model\ApiUserUpdateRequest',
-'items' => '\IterableIA\Iterable\Model\CommerceItem[]',
+'user' => '\IterableIA\Model\ApiUserUpdateRequest',
+'items' => '\IterableIA\Model\CommerceItem[]',
 'campaign_id' => 'int',
 'template_id' => 'int',
 'total' => 'double',
@@ -274,7 +274,7 @@ class TrackPurchaseRequest implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \IterableIA\Iterable\Model\ApiUserUpdateRequest
+     * @return \IterableIA\Model\ApiUserUpdateRequest
      */
     public function getUser()
     {
@@ -284,7 +284,7 @@ class TrackPurchaseRequest implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \IterableIA\Iterable\Model\ApiUserUpdateRequest $user user
+     * @param \IterableIA\Model\ApiUserUpdateRequest $user user
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class TrackPurchaseRequest implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \IterableIA\Iterable\Model\CommerceItem[]
+     * @return \IterableIA\Model\CommerceItem[]
      */
     public function getItems()
     {
@@ -308,7 +308,7 @@ class TrackPurchaseRequest implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \IterableIA\Iterable\Model\CommerceItem[] $items items
+     * @param \IterableIA\Model\CommerceItem[] $items items
      *
      * @return $this
      */

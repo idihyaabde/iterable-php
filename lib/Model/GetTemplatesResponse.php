@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * GetTemplatesResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class GetTemplatesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'templates' => '\IterableIA\Iterable\Model\ApiTemplateResponse[]'    ];
+        'templates' => '\IterableIA\Model\ApiTemplateResponse[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class GetTemplatesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets templates
      *
-     * @return \IterableIA\Iterable\Model\ApiTemplateResponse[]
+     * @return \IterableIA\Model\ApiTemplateResponse[]
      */
     public function getTemplates()
     {
@@ -212,7 +212,7 @@ class GetTemplatesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets templates
      *
-     * @param \IterableIA\Iterable\Model\ApiTemplateResponse[] $templates templates
+     * @param \IterableIA\Model\ApiTemplateResponse[] $templates templates
      *
      * @return $this
      */

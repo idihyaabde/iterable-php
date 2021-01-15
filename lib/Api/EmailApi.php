@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * EmailApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class EmailApi
      *
      * Send an email to an email address
      *
-     * @param  \IterableIA\Iterable\Model\TargetEmailRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetEmailRequest $body Recipient and email id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function sendEmailToTarget($body)
     {
@@ -108,15 +108,15 @@ class EmailApi
      *
      * Send an email to an email address
      *
-     * @param  \IterableIA\Iterable\Model\TargetEmailRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetEmailRequest $body Recipient and email id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendEmailToTargetWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->sendEmailToTargetRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class EmailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class EmailApi
      *
      * Send an email to an email address
      *
-     * @param  \IterableIA\Iterable\Model\TargetEmailRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetEmailRequest $body Recipient and email id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class EmailApi
      *
      * Send an email to an email address
      *
-     * @param  \IterableIA\Iterable\Model\TargetEmailRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetEmailRequest $body Recipient and email id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function sendEmailToTargetAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->sendEmailToTargetRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class EmailApi
     /**
      * Create request for operation 'sendEmailToTarget'
      *
-     * @param  \IterableIA\Iterable\Model\TargetEmailRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetEmailRequest $body Recipient and email id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -356,7 +356,7 @@ class EmailApi
      * @param  string $email user&#x27;s email (required)
      * @param  string $message_id id of sent message (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -374,7 +374,7 @@ class EmailApi
      * @param  string $email user&#x27;s email (required)
      * @param  string $message_id id of sent message (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

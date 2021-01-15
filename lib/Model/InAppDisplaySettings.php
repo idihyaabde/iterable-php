@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * InAppDisplaySettings Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'top' => '\IterableIA\Iterable\Model\InAppDisplaySetting',
-'right' => '\IterableIA\Iterable\Model\InAppDisplaySetting',
-'bottom' => '\IterableIA\Iterable\Model\InAppDisplaySetting',
-'left' => '\IterableIA\Iterable\Model\InAppDisplaySetting'    ];
+        'top' => '\IterableIA\Model\InAppDisplaySetting',
+'right' => '\IterableIA\Model\InAppDisplaySetting',
+'bottom' => '\IterableIA\Model\InAppDisplaySetting',
+'left' => '\IterableIA\Model\InAppDisplaySetting'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Gets top
      *
-     * @return \IterableIA\Iterable\Model\InAppDisplaySetting
+     * @return \IterableIA\Model\InAppDisplaySetting
      */
     public function getTop()
     {
@@ -239,7 +239,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Sets top
      *
-     * @param \IterableIA\Iterable\Model\InAppDisplaySetting $top top
+     * @param \IterableIA\Model\InAppDisplaySetting $top top
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Gets right
      *
-     * @return \IterableIA\Iterable\Model\InAppDisplaySetting
+     * @return \IterableIA\Model\InAppDisplaySetting
      */
     public function getRight()
     {
@@ -263,7 +263,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Sets right
      *
-     * @param \IterableIA\Iterable\Model\InAppDisplaySetting $right right
+     * @param \IterableIA\Model\InAppDisplaySetting $right right
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Gets bottom
      *
-     * @return \IterableIA\Iterable\Model\InAppDisplaySetting
+     * @return \IterableIA\Model\InAppDisplaySetting
      */
     public function getBottom()
     {
@@ -287,7 +287,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Sets bottom
      *
-     * @param \IterableIA\Iterable\Model\InAppDisplaySetting $bottom bottom
+     * @param \IterableIA\Model\InAppDisplaySetting $bottom bottom
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Gets left
      *
-     * @return \IterableIA\Iterable\Model\InAppDisplaySetting
+     * @return \IterableIA\Model\InAppDisplaySetting
      */
     public function getLeft()
     {
@@ -311,7 +311,7 @@ class InAppDisplaySettings implements ModelInterface, ArrayAccess
     /**
      * Sets left
      *
-     * @param \IterableIA\Iterable\Model\InAppDisplaySetting $left left
+     * @param \IterableIA\Model\InAppDisplaySetting $left left
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# IterableIA\Iterable\PushApi
+# IterableIA\PushApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**sendPushToTarget**](PushApi.md#sendpushtotarget) | **POST** /api/push/target | Send push notification to user
 
 # **sendPushToTarget**
-> \IterableIA\Iterable\Model\IterableApiResponse sendPushToTarget($body)
+> \IterableIA\Model\IterableApiResponse sendPushToTarget($body)
 
 Send push notification to user
 
@@ -18,17 +18,17 @@ Send a push notification to a specific user. Request data fields will override u
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\PushApi(
+$apiInstance = new IterableIA\Api\PushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Iterable\Model\TargetPushRequest(); // \IterableIA\Iterable\Model\TargetPushRequest | Recipient and email id
+$body = new \IterableIA\Model\TargetPushRequest(); // \IterableIA\Model\TargetPushRequest | Recipient and email id
 
 try {
     $result = $apiInstance->sendPushToTarget($body);
@@ -43,11 +43,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Iterable\Model\TargetPushRequest**](../Model/TargetPushRequest.md)| Recipient and email id |
+ **body** | [**\IterableIA\Model\TargetPushRequest**](../Model/TargetPushRequest.md)| Recipient and email id |
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 

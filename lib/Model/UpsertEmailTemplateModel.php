@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * UpsertEmailTemplateModel Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,12 +68,12 @@ class UpsertEmailTemplateModel implements ModelInterface, ArrayAccess
 'html' => 'string',
 'plain_text' => 'string',
 'google_analytics_campaign_name' => 'string',
-'link_params' => '\IterableIA\Iterable\Model\LinkParam[]',
+'link_params' => '\IterableIA\Model\LinkParam[]',
 'data_feed_id' => 'int',
 'data_feed_ids' => 'float[]',
 'cache_data_feed' => 'float',
 'merge_data_feed_context' => 'bool',
-'locale' => '\IterableIA\Iterable\Model\IterableLocale',
+'locale' => '\IterableIA\Model\IterableLocale',
 'message_type_id' => 'int',
 'creator_user_id' => 'string'    ];
 
@@ -604,7 +604,7 @@ class UpsertEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets link_params
      *
-     * @return \IterableIA\Iterable\Model\LinkParam[]
+     * @return \IterableIA\Model\LinkParam[]
      */
     public function getLinkParams()
     {
@@ -614,7 +614,7 @@ class UpsertEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets link_params
      *
-     * @param \IterableIA\Iterable\Model\LinkParam[] $link_params Parameters to append to each URL in html contents
+     * @param \IterableIA\Model\LinkParam[] $link_params Parameters to append to each URL in html contents
      *
      * @return $this
      */
@@ -724,7 +724,7 @@ class UpsertEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets locale
      *
-     * @return \IterableIA\Iterable\Model\IterableLocale
+     * @return \IterableIA\Model\IterableLocale
      */
     public function getLocale()
     {
@@ -734,7 +734,7 @@ class UpsertEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets locale
      *
-     * @param \IterableIA\Iterable\Model\IterableLocale $locale locale
+     * @param \IterableIA\Model\IterableLocale $locale locale
      *
      * @return $this
      */

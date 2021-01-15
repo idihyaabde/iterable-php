@@ -1,4 +1,4 @@
-# IterableIA\Iterable\CommerceApi
+# IterableIA\CommerceApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**updateCart**](CommerceApi.md#updatecart) | **POST** /api/commerce/updateCart | Update user &#x27;shoppingCartItems&#x27;
 
 # **trackPurchase**
-> \IterableIA\Iterable\Model\IterableApiResponse trackPurchase($body)
+> \IterableIA\Model\IterableApiResponse trackPurchase($body)
 
 Track a purchase
 
@@ -19,17 +19,17 @@ Track purchase events. 'shoppingCartItems' field on the user profile is cleared.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\CommerceApi(
+$apiInstance = new IterableIA\Api\CommerceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Iterable\Model\TrackPurchaseRequest(); // \IterableIA\Iterable\Model\TrackPurchaseRequest | purchase data
+$body = new \IterableIA\Model\TrackPurchaseRequest(); // \IterableIA\Model\TrackPurchaseRequest | purchase data
 
 try {
     $result = $apiInstance->trackPurchase($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Iterable\Model\TrackPurchaseRequest**](../Model/TrackPurchaseRequest.md)| purchase data |
+ **body** | [**\IterableIA\Model\TrackPurchaseRequest**](../Model/TrackPurchaseRequest.md)| purchase data |
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCart**
-> \IterableIA\Iterable\Model\IterableApiResponse updateCart($body)
+> \IterableIA\Model\IterableApiResponse updateCart($body)
 
 Update user 'shoppingCartItems'
 
@@ -73,17 +73,17 @@ Update the 'shoppingCartItems' field on the user profile with shopping cart item
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\CommerceApi(
+$apiInstance = new IterableIA\Api\CommerceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Iterable\Model\UpdateCartRequest(); // \IterableIA\Iterable\Model\UpdateCartRequest | state of the cart
+$body = new \IterableIA\Model\UpdateCartRequest(); // \IterableIA\Model\UpdateCartRequest | state of the cart
 
 try {
     $result = $apiInstance->updateCart($body);
@@ -98,11 +98,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Iterable\Model\UpdateCartRequest**](../Model/UpdateCartRequest.md)| state of the cart |
+ **body** | [**\IterableIA\Model\UpdateCartRequest**](../Model/UpdateCartRequest.md)| state of the cart |
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 

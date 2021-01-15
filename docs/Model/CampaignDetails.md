@@ -4,10 +4,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **float** |  | 
-**created_at** | [**\DateTime**](\DateTime.md) |  | 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | 
-**start_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**ended_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**created_at** | **int** |  | 
+**updated_at** | **int** |  | 
+**start_at** | **int** |  | [optional] 
+**ended_at** | **int** |  | [optional] 
 **name** | **string** |  | 
 **template_id** | **float** |  | [optional] 
 **message_medium** | **string** |  | 

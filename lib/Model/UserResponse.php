@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * UserResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class UserResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'user' => '\IterableIA\Iterable\Model\ApiUser'    ];
+        'user' => '\IterableIA\Model\ApiUser'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class UserResponse implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \IterableIA\Iterable\Model\ApiUser
+     * @return \IterableIA\Model\ApiUser
      */
     public function getUser()
     {
@@ -209,7 +209,7 @@ class UserResponse implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \IterableIA\Iterable\Model\ApiUser $user user
+     * @param \IterableIA\Model\ApiUser $user user
      *
      * @return $this
      */

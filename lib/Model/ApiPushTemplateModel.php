@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ApiPushTemplateModel Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,10 +64,10 @@ class ApiPushTemplateModel implements ModelInterface, ArrayAccess
 'message' => 'string',
 'payload' => 'object',
 'badge' => 'string',
-'locale' => '\IterableIA\Iterable\Model\IterableLocale',
+'locale' => '\IterableIA\Model\IterableLocale',
 'message_type_id' => 'int',
 'sound' => 'string',
-'deeplink' => '\IterableIA\Iterable\Model\DeeplinkURI',
+'deeplink' => '\IterableIA\Model\DeeplinkURI',
 'client_template_id' => 'string',
 'campaign_id' => 'float'    ];
 
@@ -472,7 +472,7 @@ class ApiPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets locale
      *
-     * @return \IterableIA\Iterable\Model\IterableLocale
+     * @return \IterableIA\Model\IterableLocale
      */
     public function getLocale()
     {
@@ -482,7 +482,7 @@ class ApiPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets locale
      *
-     * @param \IterableIA\Iterable\Model\IterableLocale $locale locale
+     * @param \IterableIA\Model\IterableLocale $locale locale
      *
      * @return $this
      */
@@ -544,7 +544,7 @@ class ApiPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets deeplink
      *
-     * @return \IterableIA\Iterable\Model\DeeplinkURI
+     * @return \IterableIA\Model\DeeplinkURI
      */
     public function getDeeplink()
     {
@@ -554,7 +554,7 @@ class ApiPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets deeplink
      *
-     * @param \IterableIA\Iterable\Model\DeeplinkURI $deeplink deeplink
+     * @param \IterableIA\Model\DeeplinkURI $deeplink deeplink
      *
      * @return $this
      */

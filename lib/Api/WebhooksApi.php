@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * WebhooksApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class WebhooksApi
      * Get webhooks
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\GetWebhooksResponse
+     * @return \IterableIA\Model\GetWebhooksResponse
      */
     public function getWebhooks()
     {
@@ -108,13 +108,13 @@ class WebhooksApi
      * Get webhooks
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\GetWebhooksResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\GetWebhooksResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWebhooksWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\GetWebhooksResponse';
+        $returnType = '\IterableIA\Model\GetWebhooksResponse';
         $request = $this->getWebhooksRequest();
 
         try {
@@ -166,7 +166,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\GetWebhooksResponse',
+                        '\IterableIA\Model\GetWebhooksResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class WebhooksApi
      */
     public function getWebhooksAsyncWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\GetWebhooksResponse';
+        $returnType = '\IterableIA\Model\GetWebhooksResponse';
         $request = $this->getWebhooksRequest();
 
         return $this->client
@@ -339,11 +339,11 @@ class WebhooksApi
      *
      * Update webhook
      *
-     * @param  \IterableIA\Iterable\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
+     * @param  \IterableIA\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ApiWebhookResponse
+     * @return \IterableIA\Model\ApiWebhookResponse
      */
     public function updateWebhook($body)
     {
@@ -356,15 +356,15 @@ class WebhooksApi
      *
      * Update webhook
      *
-     * @param  \IterableIA\Iterable\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
+     * @param  \IterableIA\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ApiWebhookResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ApiWebhookResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWebhookWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\ApiWebhookResponse';
+        $returnType = '\IterableIA\Model\ApiWebhookResponse';
         $request = $this->updateWebhookRequest($body);
 
         try {
@@ -416,7 +416,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ApiWebhookResponse',
+                        '\IterableIA\Model\ApiWebhookResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -431,7 +431,7 @@ class WebhooksApi
      *
      * Update webhook
      *
-     * @param  \IterableIA\Iterable\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
+     * @param  \IterableIA\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -451,14 +451,14 @@ class WebhooksApi
      *
      * Update webhook
      *
-     * @param  \IterableIA\Iterable\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
+     * @param  \IterableIA\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateWebhookAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\ApiWebhookResponse';
+        $returnType = '\IterableIA\Model\ApiWebhookResponse';
         $request = $this->updateWebhookRequest($body);
 
         return $this->client
@@ -501,7 +501,7 @@ class WebhooksApi
     /**
      * Create request for operation 'updateWebhook'
      *
-     * @param  \IterableIA\Iterable\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
+     * @param  \IterableIA\Model\ApiWebhookModel $body Only the specified fields will be updated (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * BulkUpdateUsersRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class BulkUpdateUsersRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'users' => '\IterableIA\Iterable\Model\OptionalApiUser[]'    ];
+        'users' => '\IterableIA\Model\OptionalApiUser[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class BulkUpdateUsersRequest implements ModelInterface, ArrayAccess
     /**
      * Gets users
      *
-     * @return \IterableIA\Iterable\Model\OptionalApiUser[]
+     * @return \IterableIA\Model\OptionalApiUser[]
      */
     public function getUsers()
     {
@@ -212,7 +212,7 @@ class BulkUpdateUsersRequest implements ModelInterface, ArrayAccess
     /**
      * Sets users
      *
-     * @param \IterableIA\Iterable\Model\OptionalApiUser[] $users users
+     * @param \IterableIA\Model\OptionalApiUser[] $users users
      *
      * @return $this
      */

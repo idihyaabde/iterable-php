@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable\Model
+ * @package  IterableIA\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package IterableIA\Iterable\Model
+ * @package IterableIA\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

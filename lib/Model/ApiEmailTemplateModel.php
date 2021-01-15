@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ApiEmailTemplateModel Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'template_id' => 'int',
-'metadata' => '\IterableIA\Iterable\Model\ApiTemplateResponse',
+'metadata' => '\IterableIA\Model\ApiTemplateResponse',
 'name' => 'string',
 'from_name' => 'string',
 'from_email' => 'string',
@@ -69,13 +69,13 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
 'html' => 'string',
 'plain_text' => 'string',
 'google_analytics_campaign_name' => 'string',
-'link_params' => '\IterableIA\Iterable\Model\LinkParam[]',
+'link_params' => '\IterableIA\Model\LinkParam[]',
 'data_feed_id' => 'float',
 'data_feed_ids' => 'float[]',
 'cache_data_feed' => 'float',
 'merge_data_feed_context' => 'float',
 'client_template_id' => 'string',
-'locale' => '\IterableIA\Iterable\Model\IterableLocale',
+'locale' => '\IterableIA\Model\IterableLocale',
 'message_type_id' => 'float',
 'creator_user_id' => 'string'    ];
 
@@ -352,7 +352,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets metadata
      *
-     * @return \IterableIA\Iterable\Model\ApiTemplateResponse
+     * @return \IterableIA\Model\ApiTemplateResponse
      */
     public function getMetadata()
     {
@@ -362,7 +362,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets metadata
      *
-     * @param \IterableIA\Iterable\Model\ApiTemplateResponse $metadata metadata
+     * @param \IterableIA\Model\ApiTemplateResponse $metadata metadata
      *
      * @return $this
      */
@@ -640,7 +640,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets link_params
      *
-     * @return \IterableIA\Iterable\Model\LinkParam[]
+     * @return \IterableIA\Model\LinkParam[]
      */
     public function getLinkParams()
     {
@@ -650,7 +650,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets link_params
      *
-     * @param \IterableIA\Iterable\Model\LinkParam[] $link_params Parameters to append to each URL in html contents
+     * @param \IterableIA\Model\LinkParam[] $link_params Parameters to append to each URL in html contents
      *
      * @return $this
      */
@@ -784,7 +784,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets locale
      *
-     * @return \IterableIA\Iterable\Model\IterableLocale
+     * @return \IterableIA\Model\IterableLocale
      */
     public function getLocale()
     {
@@ -794,7 +794,7 @@ class ApiEmailTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets locale
      *
-     * @param \IterableIA\Iterable\Model\IterableLocale $locale locale
+     * @param \IterableIA\Model\IterableLocale $locale locale
      *
      * @return $this
      */

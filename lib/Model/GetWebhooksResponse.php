@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * GetWebhooksResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class GetWebhooksResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'webhooks' => '\IterableIA\Iterable\Model\ApiWebhookResponse[]'    ];
+        'webhooks' => '\IterableIA\Model\ApiWebhookResponse[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class GetWebhooksResponse implements ModelInterface, ArrayAccess
     /**
      * Gets webhooks
      *
-     * @return \IterableIA\Iterable\Model\ApiWebhookResponse[]
+     * @return \IterableIA\Model\ApiWebhookResponse[]
      */
     public function getWebhooks()
     {
@@ -212,7 +212,7 @@ class GetWebhooksResponse implements ModelInterface, ArrayAccess
     /**
      * Sets webhooks
      *
-     * @param \IterableIA\Iterable\Model\ApiWebhookResponse[] $webhooks webhooks
+     * @param \IterableIA\Model\ApiWebhookResponse[] $webhooks webhooks
      *
      * @return $this
      */

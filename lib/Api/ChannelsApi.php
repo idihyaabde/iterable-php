@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * ChannelsApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class ChannelsApi
      * Get channels
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ChannelsResponse
+     * @return \IterableIA\Model\ChannelsResponse
      */
     public function channels()
     {
@@ -108,13 +108,13 @@ class ChannelsApi
      * Get channels
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ChannelsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ChannelsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function channelsWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\ChannelsResponse';
+        $returnType = '\IterableIA\Model\ChannelsResponse';
         $request = $this->channelsRequest();
 
         try {
@@ -166,7 +166,7 @@ class ChannelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ChannelsResponse',
+                        '\IterableIA\Model\ChannelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class ChannelsApi
      */
     public function channelsAsyncWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\ChannelsResponse';
+        $returnType = '\IterableIA\Model\ChannelsResponse';
         $request = $this->channelsRequest();
 
         return $this->client

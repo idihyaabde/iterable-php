@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * BulkUpdateSubscriptionsRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class BulkUpdateSubscriptionsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'update_subscriptions_requests' => '\IterableIA\Iterable\Model\UpdateSubscriptionsRequest[]'    ];
+        'update_subscriptions_requests' => '\IterableIA\Model\UpdateSubscriptionsRequest[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class BulkUpdateSubscriptionsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets update_subscriptions_requests
      *
-     * @return \IterableIA\Iterable\Model\UpdateSubscriptionsRequest[]
+     * @return \IterableIA\Model\UpdateSubscriptionsRequest[]
      */
     public function getUpdateSubscriptionsRequests()
     {
@@ -212,7 +212,7 @@ class BulkUpdateSubscriptionsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets update_subscriptions_requests
      *
-     * @param \IterableIA\Iterable\Model\UpdateSubscriptionsRequest[] $update_subscriptions_requests List of UpdateSubscriptionsRequests to process
+     * @param \IterableIA\Model\UpdateSubscriptionsRequest[] $update_subscriptions_requests List of UpdateSubscriptionsRequests to process
      *
      * @return $this
      */

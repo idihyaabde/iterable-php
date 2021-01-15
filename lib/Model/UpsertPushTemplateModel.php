@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * UpsertPushTemplateModel Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,12 +60,12 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
 'name' => 'string',
 'title' => 'string',
 'message' => 'string',
-'payload' => '\IterableIA\Iterable\Model\JsObject',
+'payload' => '\IterableIA\Model\JsObject',
 'badge' => 'string',
-'locale' => '\IterableIA\Iterable\Model\IterableLocale',
+'locale' => '\IterableIA\Model\IterableLocale',
 'message_type_id' => 'int',
 'sound' => 'string',
-'deeplink' => '\IterableIA\Iterable\Model\DeeplinkURI',
+'deeplink' => '\IterableIA\Model\DeeplinkURI',
 'creator_user_id' => 'string'    ];
 
     /**
@@ -358,7 +358,7 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \IterableIA\Iterable\Model\JsObject
+     * @return \IterableIA\Model\JsObject
      */
     public function getPayload()
     {
@@ -368,7 +368,7 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \IterableIA\Iterable\Model\JsObject $payload payload
+     * @param \IterableIA\Model\JsObject $payload payload
      *
      * @return $this
      */
@@ -406,7 +406,7 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets locale
      *
-     * @return \IterableIA\Iterable\Model\IterableLocale
+     * @return \IterableIA\Model\IterableLocale
      */
     public function getLocale()
     {
@@ -416,7 +416,7 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets locale
      *
-     * @param \IterableIA\Iterable\Model\IterableLocale $locale locale
+     * @param \IterableIA\Model\IterableLocale $locale locale
      *
      * @return $this
      */
@@ -478,7 +478,7 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Gets deeplink
      *
-     * @return \IterableIA\Iterable\Model\DeeplinkURI
+     * @return \IterableIA\Model\DeeplinkURI
      */
     public function getDeeplink()
     {
@@ -488,7 +488,7 @@ class UpsertPushTemplateModel implements ModelInterface, ArrayAccess
     /**
      * Sets deeplink
      *
-     * @param \IterableIA\Iterable\Model\DeeplinkURI $deeplink deeplink
+     * @param \IterableIA\Model\DeeplinkURI $deeplink deeplink
      *
      * @return $this
      */

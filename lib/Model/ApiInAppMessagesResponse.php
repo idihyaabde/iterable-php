@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ApiInAppMessagesResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ApiInAppMessagesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'in_app_messages' => '\IterableIA\Iterable\Model\ApiInAppMessage[]'    ];
+        'in_app_messages' => '\IterableIA\Model\ApiInAppMessage[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class ApiInAppMessagesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets in_app_messages
      *
-     * @return \IterableIA\Iterable\Model\ApiInAppMessage[]
+     * @return \IterableIA\Model\ApiInAppMessage[]
      */
     public function getInAppMessages()
     {
@@ -212,7 +212,7 @@ class ApiInAppMessagesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets in_app_messages
      *
-     * @param \IterableIA\Iterable\Model\ApiInAppMessage[] $in_app_messages in_app_messages
+     * @param \IterableIA\Model\ApiInAppMessage[] $in_app_messages in_app_messages
      *
      * @return $this
      */

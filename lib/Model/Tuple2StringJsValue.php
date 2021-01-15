@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * Tuple2StringJsValue Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class Tuple2StringJsValue implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         '_1' => 'string',
-'_2' => '\IterableIA\Iterable\Model\JsValue'    ];
+'_2' => '\IterableIA\Model\JsValue'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -235,7 +235,7 @@ class Tuple2StringJsValue implements ModelInterface, ArrayAccess
     /**
      * Gets _2
      *
-     * @return \IterableIA\Iterable\Model\JsValue
+     * @return \IterableIA\Model\JsValue
      */
     public function get2()
     {
@@ -245,7 +245,7 @@ class Tuple2StringJsValue implements ModelInterface, ArrayAccess
     /**
      * Sets _2
      *
-     * @param \IterableIA\Iterable\Model\JsValue $_2 _2
+     * @param \IterableIA\Model\JsValue $_2 _2
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * InAppApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class InAppApi
      * @param  string $email email of user to get messages for. Either email or userId must be specified (optional)
      * @param  string $user_id userId of user to get message for. (optional)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ApiInAppMessagesResponse
+     * @return \IterableIA\Model\ApiInAppMessagesResponse
      */
     public function getMessages($count, $email = null, $user_id = null)
     {
@@ -114,13 +114,13 @@ class InAppApi
      * @param  string $email email of user to get messages for. Either email or userId must be specified (optional)
      * @param  string $user_id userId of user to get message for. (optional)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ApiInAppMessagesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ApiInAppMessagesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMessagesWithHttpInfo($count, $email = null, $user_id = null)
     {
-        $returnType = '\IterableIA\Iterable\Model\ApiInAppMessagesResponse';
+        $returnType = '\IterableIA\Model\ApiInAppMessagesResponse';
         $request = $this->getMessagesRequest($count, $email, $user_id);
 
         try {
@@ -172,7 +172,7 @@ class InAppApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ApiInAppMessagesResponse',
+                        '\IterableIA\Model\ApiInAppMessagesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class InAppApi
      */
     public function getMessagesAsyncWithHttpInfo($count, $email = null, $user_id = null)
     {
-        $returnType = '\IterableIA\Iterable\Model\ApiInAppMessagesResponse';
+        $returnType = '\IterableIA\Model\ApiInAppMessagesResponse';
         $request = $this->getMessagesRequest($count, $email, $user_id);
 
         return $this->client
@@ -372,11 +372,11 @@ class InAppApi
      *
      * Send an in-app notification to a user
      *
-     * @param  \IterableIA\Iterable\Model\TargetInAppRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetInAppRequest $body Recipient and email id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function sendInAppToTarget($body)
     {
@@ -389,15 +389,15 @@ class InAppApi
      *
      * Send an in-app notification to a user
      *
-     * @param  \IterableIA\Iterable\Model\TargetInAppRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetInAppRequest $body Recipient and email id (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendInAppToTargetWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->sendInAppToTargetRequest($body);
 
         try {
@@ -449,7 +449,7 @@ class InAppApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -464,7 +464,7 @@ class InAppApi
      *
      * Send an in-app notification to a user
      *
-     * @param  \IterableIA\Iterable\Model\TargetInAppRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetInAppRequest $body Recipient and email id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -484,14 +484,14 @@ class InAppApi
      *
      * Send an in-app notification to a user
      *
-     * @param  \IterableIA\Iterable\Model\TargetInAppRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetInAppRequest $body Recipient and email id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function sendInAppToTargetAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->sendInAppToTargetRequest($body);
 
         return $this->client
@@ -534,7 +534,7 @@ class InAppApi
     /**
      * Create request for operation 'sendInAppToTarget'
      *
-     * @param  \IterableIA\Iterable\Model\TargetInAppRequest $body Recipient and email id (required)
+     * @param  \IterableIA\Model\TargetInAppRequest $body Recipient and email id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

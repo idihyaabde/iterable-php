@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * InAppContentApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class InAppContentApi implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'html' => 'string',
-'in_app_display_settings' => '\IterableIA\Iterable\Model\InAppDisplaySettings'    ];
+'in_app_display_settings' => '\IterableIA\Model\InAppDisplaySettings'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -235,7 +235,7 @@ class InAppContentApi implements ModelInterface, ArrayAccess
     /**
      * Gets in_app_display_settings
      *
-     * @return \IterableIA\Iterable\Model\InAppDisplaySettings
+     * @return \IterableIA\Model\InAppDisplaySettings
      */
     public function getInAppDisplaySettings()
     {
@@ -245,7 +245,7 @@ class InAppContentApi implements ModelInterface, ArrayAccess
     /**
      * Sets in_app_display_settings
      *
-     * @param \IterableIA\Iterable\Model\InAppDisplaySettings $in_app_display_settings in_app_display_settings
+     * @param \IterableIA\Model\InAppDisplaySettings $in_app_display_settings in_app_display_settings
      *
      * @return $this
      */

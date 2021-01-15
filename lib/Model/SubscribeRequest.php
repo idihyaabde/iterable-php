@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * SubscribeRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class SubscribeRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'list_id' => 'int',
-'subscribers' => '\IterableIA\Iterable\Model\OptionalApiUser[]'    ];
+'subscribers' => '\IterableIA\Model\OptionalApiUser[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -235,7 +235,7 @@ class SubscribeRequest implements ModelInterface, ArrayAccess
     /**
      * Gets subscribers
      *
-     * @return \IterableIA\Iterable\Model\OptionalApiUser[]
+     * @return \IterableIA\Model\OptionalApiUser[]
      */
     public function getSubscribers()
     {
@@ -245,7 +245,7 @@ class SubscribeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets subscribers
      *
-     * @param \IterableIA\Iterable\Model\OptionalApiUser[] $subscribers subscribers
+     * @param \IterableIA\Model\OptionalApiUser[] $subscribers subscribers
      *
      * @return $this
      */

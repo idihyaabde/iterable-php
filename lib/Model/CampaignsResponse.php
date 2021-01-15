@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * CampaignsResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class CampaignsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'campaigns' => '\IterableIA\Iterable\Model\CampaignDetails[]'    ];
+        'campaigns' => '\IterableIA\Model\CampaignDetails[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class CampaignsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets campaigns
      *
-     * @return \IterableIA\Iterable\Model\CampaignDetails[]
+     * @return \IterableIA\Model\CampaignDetails[]
      */
     public function getCampaigns()
     {
@@ -212,7 +212,7 @@ class CampaignsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets campaigns
      *
-     * @param \IterableIA\Iterable\Model\CampaignDetails[] $campaigns campaigns
+     * @param \IterableIA\Model\CampaignDetails[] $campaigns campaigns
      *
      * @return $this
      */

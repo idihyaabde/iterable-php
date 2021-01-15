@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * MessageTypesApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class MessageTypesApi
      * List message types
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\MessageTypesResponse
+     * @return \IterableIA\Model\MessageTypesResponse
      */
     public function messageTypes()
     {
@@ -108,13 +108,13 @@ class MessageTypesApi
      * List message types
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\MessageTypesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\MessageTypesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function messageTypesWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\MessageTypesResponse';
+        $returnType = '\IterableIA\Model\MessageTypesResponse';
         $request = $this->messageTypesRequest();
 
         try {
@@ -166,7 +166,7 @@ class MessageTypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\MessageTypesResponse',
+                        '\IterableIA\Model\MessageTypesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class MessageTypesApi
      */
     public function messageTypesAsyncWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\MessageTypesResponse';
+        $returnType = '\IterableIA\Model\MessageTypesResponse';
         $request = $this->messageTypesRequest();
 
         return $this->client

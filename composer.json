@@ -1,5 +1,6 @@
 {
     "name": "idihyaabde/iterable-php",
+    "version": "1.0.0",
     "description": "",
     "keywords": [
         "swagger",
@@ -28,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "IterableIA\\Iterable\\" : "lib/" }
+        "psr-4": { "IterableIA\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "IterableIA\\Iterable\\" : "test/" }
+        "psr-4": { "IterableIA\\" : "test/" }
     }
 }

@@ -1,4 +1,4 @@
-# IterableIA\Iterable\WebhooksApi
+# IterableIA\WebhooksApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**updateWebhook**](WebhooksApi.md#updatewebhook) | **POST** /api/webhooks | Update webhook
 
 # **getWebhooks**
-> \IterableIA\Iterable\Model\GetWebhooksResponse getWebhooks()
+> \IterableIA\Model\GetWebhooksResponse getWebhooks()
 
 Get webhooks
 
@@ -19,11 +19,11 @@ Get webhooks for a project.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\WebhooksApi(
+$apiInstance = new IterableIA\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\GetWebhooksResponse**](../Model/GetWebhooksResponse.md)
+[**\IterableIA\Model\GetWebhooksResponse**](../Model/GetWebhooksResponse.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWebhook**
-> \IterableIA\Iterable\Model\ApiWebhookResponse updateWebhook($body)
+> \IterableIA\Model\ApiWebhookResponse updateWebhook($body)
 
 Update webhook
 
@@ -67,17 +67,17 @@ Update webhook
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\WebhooksApi(
+$apiInstance = new IterableIA\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Iterable\Model\ApiWebhookModel(); // \IterableIA\Iterable\Model\ApiWebhookModel | Only the specified fields will be updated
+$body = new \IterableIA\Model\ApiWebhookModel(); // \IterableIA\Model\ApiWebhookModel | Only the specified fields will be updated
 
 try {
     $result = $apiInstance->updateWebhook($body);
@@ -92,11 +92,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Iterable\Model\ApiWebhookModel**](../Model/ApiWebhookModel.md)| Only the specified fields will be updated |
+ **body** | [**\IterableIA\Model\ApiWebhookModel**](../Model/ApiWebhookModel.md)| Only the specified fields will be updated |
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\ApiWebhookResponse**](../Model/ApiWebhookResponse.md)
+[**\IterableIA\Model\ApiWebhookResponse**](../Model/ApiWebhookResponse.md)
 
 ### Authorization
 

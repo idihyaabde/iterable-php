@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * RegisterDeviceTokenRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class RegisterDeviceTokenRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'email' => 'string',
-'device' => '\IterableIA\Iterable\Model\Device',
+'device' => '\IterableIA\Model\Device',
 'user_id' => 'string',
 'prefer_user_id' => 'bool'    ];
 
@@ -244,7 +244,7 @@ class RegisterDeviceTokenRequest implements ModelInterface, ArrayAccess
     /**
      * Gets device
      *
-     * @return \IterableIA\Iterable\Model\Device
+     * @return \IterableIA\Model\Device
      */
     public function getDevice()
     {
@@ -254,7 +254,7 @@ class RegisterDeviceTokenRequest implements ModelInterface, ArrayAccess
     /**
      * Sets device
      *
-     * @param \IterableIA\Iterable\Model\Device $device device
+     * @param \IterableIA\Model\Device $device device
      *
      * @return $this
      */

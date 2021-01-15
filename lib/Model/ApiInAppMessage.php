@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ApiInAppMessage Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ApiInAppMessage implements ModelInterface, ArrayAccess
         'message_id' => 'string',
 'campaign_id' => 'float',
 'expires_at' => 'int',
-'content' => '\IterableIA\Iterable\Model\InAppContentApi',
+'content' => '\IterableIA\Model\InAppContentApi',
 'custom_payload' => 'object'    ];
 
     /**
@@ -301,7 +301,7 @@ class ApiInAppMessage implements ModelInterface, ArrayAccess
     /**
      * Gets content
      *
-     * @return \IterableIA\Iterable\Model\InAppContentApi
+     * @return \IterableIA\Model\InAppContentApi
      */
     public function getContent()
     {
@@ -311,7 +311,7 @@ class ApiInAppMessage implements ModelInterface, ArrayAccess
     /**
      * Sets content
      *
-     * @param \IterableIA\Iterable\Model\InAppContentApi $content content
+     * @param \IterableIA\Model\InAppContentApi $content content
      *
      * @return $this
      */

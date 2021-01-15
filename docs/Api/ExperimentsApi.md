@@ -1,4 +1,4 @@
-# IterableIA\Iterable\ExperimentsApi
+# IterableIA\ExperimentsApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getExperimentMetrics**](ExperimentsApi.md#getexperimentmetrics) | **GET** /api/experiments/metrics | Get metrics for experiments
 
 # **getExperimentMetrics**
-> \IterableIA\Iterable\Model\ExperimentMetricsResponse getExperimentMetrics($experiment_id, $campaign_id, $start_date_time, $end_date_time)
+> \IterableIA\Model\ExperimentMetricsResponse getExperimentMetrics($experiment_id, $campaign_id, $start_date_time, $end_date_time)
 
 Get metrics for experiments
 
@@ -18,11 +18,11 @@ Get metrics for a single experiment or for multiple experiments. Note that we cu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\ExperimentsApi(
+$apiInstance = new IterableIA\Api\ExperimentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\ExperimentMetricsResponse**](../Model/ExperimentMetricsResponse.md)
+[**\IterableIA\Model\ExperimentMetricsResponse**](../Model/ExperimentMetricsResponse.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * SMSApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class SMSApi
      *
      * Send SMS notification to user
      *
-     * @param  \IterableIA\Iterable\Model\TargetSMSRequest $body Recipient and email ID (required)
+     * @param  \IterableIA\Model\TargetSMSRequest $body Recipient and email ID (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function sendSMSToTarget($body)
     {
@@ -108,15 +108,15 @@ class SMSApi
      *
      * Send SMS notification to user
      *
-     * @param  \IterableIA\Iterable\Model\TargetSMSRequest $body Recipient and email ID (required)
+     * @param  \IterableIA\Model\TargetSMSRequest $body Recipient and email ID (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendSMSToTargetWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->sendSMSToTargetRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class SMSApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class SMSApi
      *
      * Send SMS notification to user
      *
-     * @param  \IterableIA\Iterable\Model\TargetSMSRequest $body Recipient and email ID (required)
+     * @param  \IterableIA\Model\TargetSMSRequest $body Recipient and email ID (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class SMSApi
      *
      * Send SMS notification to user
      *
-     * @param  \IterableIA\Iterable\Model\TargetSMSRequest $body Recipient and email ID (required)
+     * @param  \IterableIA\Model\TargetSMSRequest $body Recipient and email ID (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function sendSMSToTargetAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->sendSMSToTargetRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class SMSApi
     /**
      * Create request for operation 'sendSMSToTarget'
      *
-     * @param  \IterableIA\Iterable\Model\TargetSMSRequest $body Recipient and email ID (required)
+     * @param  \IterableIA\Model\TargetSMSRequest $body Recipient and email ID (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

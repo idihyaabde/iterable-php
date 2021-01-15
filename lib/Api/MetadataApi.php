@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * MetadataApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class MetadataApi
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $next_marker next result set id; returned by previous search if more hits exist (optional, default to None)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\Listing
+     * @return \IterableIA\Model\Listing
      */
     public function callList($table, $next_marker = 'None')
     {
@@ -112,13 +112,13 @@ class MetadataApi
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $next_marker next result set id; returned by previous search if more hits exist (optional, default to None)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\Listing, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\Listing, HTTP status code, HTTP response headers (array of strings)
      */
     public function callListWithHttpInfo($table, $next_marker = 'None')
     {
-        $returnType = '\IterableIA\Iterable\Model\Listing';
+        $returnType = '\IterableIA\Model\Listing';
         $request = $this->callListRequest($table, $next_marker);
 
         try {
@@ -170,7 +170,7 @@ class MetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\Listing',
+                        '\IterableIA\Model\Listing',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class MetadataApi
      */
     public function callListAsyncWithHttpInfo($table, $next_marker = 'None')
     {
-        $returnType = '\IterableIA\Iterable\Model\Listing';
+        $returnType = '\IterableIA\Model\Listing';
         $request = $this->callListRequest($table, $next_marker);
 
         return $this->client
@@ -370,9 +370,9 @@ class MetadataApi
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function deleteMetadataKey($table, $key)
     {
@@ -388,13 +388,13 @@ class MetadataApi
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteMetadataKeyWithHttpInfo($table, $key)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->deleteMetadataKeyRequest($table, $key);
 
         try {
@@ -446,7 +446,7 @@ class MetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class MetadataApi
      */
     public function deleteMetadataKeyAsyncWithHttpInfo($table, $key)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->deleteMetadataKeyRequest($table, $key);
 
         return $this->client
@@ -655,9 +655,9 @@ class MetadataApi
      *
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function deleteMetadataTable($table)
     {
@@ -672,13 +672,13 @@ class MetadataApi
      *
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteMetadataTableWithHttpInfo($table)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->deleteMetadataTableRequest($table);
 
         try {
@@ -730,7 +730,7 @@ class MetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -772,7 +772,7 @@ class MetadataApi
      */
     public function deleteMetadataTableAsyncWithHttpInfo($table)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->deleteMetadataTableRequest($table);
 
         return $this->client
@@ -923,9 +923,9 @@ class MetadataApi
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\MetadataWithProperties
+     * @return \IterableIA\Model\MetadataWithProperties
      */
     public function get($table, $key)
     {
@@ -941,13 +941,13 @@ class MetadataApi
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\MetadataWithProperties, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\MetadataWithProperties, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWithHttpInfo($table, $key)
     {
-        $returnType = '\IterableIA\Iterable\Model\MetadataWithProperties';
+        $returnType = '\IterableIA\Model\MetadataWithProperties';
         $request = $this->getRequest($table, $key);
 
         try {
@@ -999,7 +999,7 @@ class MetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\MetadataWithProperties',
+                        '\IterableIA\Model\MetadataWithProperties',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1043,7 +1043,7 @@ class MetadataApi
      */
     public function getAsyncWithHttpInfo($table, $key)
     {
-        $returnType = '\IterableIA\Iterable\Model\MetadataWithProperties';
+        $returnType = '\IterableIA\Model\MetadataWithProperties';
         $request = $this->getRequest($table, $key);
 
         return $this->client
@@ -1207,9 +1207,9 @@ class MetadataApi
      * List available tables
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ListMetadataTablesResponse
+     * @return \IterableIA\Model\ListMetadataTablesResponse
      */
     public function listTables()
     {
@@ -1223,13 +1223,13 @@ class MetadataApi
      * List available tables
      *
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ListMetadataTablesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ListMetadataTablesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listTablesWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\ListMetadataTablesResponse';
+        $returnType = '\IterableIA\Model\ListMetadataTablesResponse';
         $request = $this->listTablesRequest();
 
         try {
@@ -1281,7 +1281,7 @@ class MetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ListMetadataTablesResponse',
+                        '\IterableIA\Model\ListMetadataTablesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1321,7 +1321,7 @@ class MetadataApi
      */
     public function listTablesAsyncWithHttpInfo()
     {
-        $returnType = '\IterableIA\Iterable\Model\ListMetadataTablesResponse';
+        $returnType = '\IterableIA\Model\ListMetadataTablesResponse';
         $request = $this->listTablesRequest();
 
         return $this->client
@@ -1454,13 +1454,13 @@ class MetadataApi
      *
      * Create or replace metadata
      *
-     * @param  \IterableIA\Iterable\Model\PutMetadataRequest $body Metadata properties (required)
+     * @param  \IterableIA\Model\PutMetadataRequest $body Metadata properties (required)
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function put($body, $table, $key)
     {
@@ -1473,17 +1473,17 @@ class MetadataApi
      *
      * Create or replace metadata
      *
-     * @param  \IterableIA\Iterable\Model\PutMetadataRequest $body Metadata properties (required)
+     * @param  \IterableIA\Model\PutMetadataRequest $body Metadata properties (required)
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function putWithHttpInfo($body, $table, $key)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->putRequest($body, $table, $key);
 
         try {
@@ -1535,7 +1535,7 @@ class MetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1550,7 +1550,7 @@ class MetadataApi
      *
      * Create or replace metadata
      *
-     * @param  \IterableIA\Iterable\Model\PutMetadataRequest $body Metadata properties (required)
+     * @param  \IterableIA\Model\PutMetadataRequest $body Metadata properties (required)
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
@@ -1572,7 +1572,7 @@ class MetadataApi
      *
      * Create or replace metadata
      *
-     * @param  \IterableIA\Iterable\Model\PutMetadataRequest $body Metadata properties (required)
+     * @param  \IterableIA\Model\PutMetadataRequest $body Metadata properties (required)
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *
@@ -1581,7 +1581,7 @@ class MetadataApi
      */
     public function putAsyncWithHttpInfo($body, $table, $key)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->putRequest($body, $table, $key);
 
         return $this->client
@@ -1624,7 +1624,7 @@ class MetadataApi
     /**
      * Create request for operation 'put'
      *
-     * @param  \IterableIA\Iterable\Model\PutMetadataRequest $body Metadata properties (required)
+     * @param  \IterableIA\Model\PutMetadataRequest $body Metadata properties (required)
      * @param  string $table Table name [Alphanumeric, case insensitive] (required)
      * @param  string $key Metadata key [Alphanumeric, case sensitive] (required)
      *

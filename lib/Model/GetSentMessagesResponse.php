@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * GetSentMessagesResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class GetSentMessagesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\IterableIA\Iterable\Model\SentMessage[]'    ];
+        'messages' => '\IterableIA\Model\SentMessage[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class GetSentMessagesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \IterableIA\Iterable\Model\SentMessage[]
+     * @return \IterableIA\Model\SentMessage[]
      */
     public function getMessages()
     {
@@ -212,7 +212,7 @@ class GetSentMessagesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \IterableIA\Iterable\Model\SentMessage[] $messages messages
+     * @param \IterableIA\Model\SentMessage[] $messages messages
      *
      * @return $this
      */

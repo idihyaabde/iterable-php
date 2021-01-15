@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * BulkTrackRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class BulkTrackRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'events' => '\IterableIA\Iterable\Model\TrackRequest[]'    ];
+        'events' => '\IterableIA\Model\TrackRequest[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class BulkTrackRequest implements ModelInterface, ArrayAccess
     /**
      * Gets events
      *
-     * @return \IterableIA\Iterable\Model\TrackRequest[]
+     * @return \IterableIA\Model\TrackRequest[]
      */
     public function getEvents()
     {
@@ -212,7 +212,7 @@ class BulkTrackRequest implements ModelInterface, ArrayAccess
     /**
      * Sets events
      *
-     * @param \IterableIA\Iterable\Model\TrackRequest[] $events events
+     * @param \IterableIA\Model\TrackRequest[] $events events
      *
      * @return $this
      */

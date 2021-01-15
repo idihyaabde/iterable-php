@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ListMetadataTablesResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ListMetadataTablesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\IterableIA\Iterable\Model\Table[]'    ];
+        'results' => '\IterableIA\Model\Table[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class ListMetadataTablesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \IterableIA\Iterable\Model\Table[]
+     * @return \IterableIA\Model\Table[]
      */
     public function getResults()
     {
@@ -212,7 +212,7 @@ class ListMetadataTablesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \IterableIA\Iterable\Model\Table[] $results results
+     * @param \IterableIA\Model\Table[] $results results
      *
      * @return $this
      */

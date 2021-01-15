@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * EventsApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class EventsApi
      *
      * Consume an in-app notification
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app notification to consume (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app notification to consume (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function inAppConsume($body)
     {
@@ -108,15 +108,15 @@ class EventsApi
      *
      * Consume an in-app notification
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app notification to consume (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app notification to consume (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function inAppConsumeWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->inAppConsumeRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class EventsApi
      *
      * Consume an in-app notification
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app notification to consume (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app notification to consume (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class EventsApi
      *
      * Consume an in-app notification
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app notification to consume (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app notification to consume (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function inAppConsumeAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->inAppConsumeRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class EventsApi
     /**
      * Create request for operation 'inAppConsume'
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app notification to consume (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app notification to consume (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -353,11 +353,11 @@ class EventsApi
      *
      * Track an event
      *
-     * @param  \IterableIA\Iterable\Model\TrackRequest $body Event to track (required)
+     * @param  \IterableIA\Model\TrackRequest $body Event to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function track($body)
     {
@@ -370,15 +370,15 @@ class EventsApi
      *
      * Track an event
      *
-     * @param  \IterableIA\Iterable\Model\TrackRequest $body Event to track (required)
+     * @param  \IterableIA\Model\TrackRequest $body Event to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackRequest($body);
 
         try {
@@ -430,7 +430,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -445,7 +445,7 @@ class EventsApi
      *
      * Track an event
      *
-     * @param  \IterableIA\Iterable\Model\TrackRequest $body Event to track (required)
+     * @param  \IterableIA\Model\TrackRequest $body Event to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -465,14 +465,14 @@ class EventsApi
      *
      * Track an event
      *
-     * @param  \IterableIA\Iterable\Model\TrackRequest $body Event to track (required)
+     * @param  \IterableIA\Model\TrackRequest $body Event to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackRequest($body);
 
         return $this->client
@@ -515,7 +515,7 @@ class EventsApi
     /**
      * Create request for operation 'track'
      *
-     * @param  \IterableIA\Iterable\Model\TrackRequest $body Event to track (required)
+     * @param  \IterableIA\Model\TrackRequest $body Event to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -615,11 +615,11 @@ class EventsApi
      *
      * Bulk track events
      *
-     * @param  \IterableIA\Iterable\Model\BulkTrackRequest $body Events to track (required)
+     * @param  \IterableIA\Model\BulkTrackRequest $body Events to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\BulkTrackResponse
+     * @return \IterableIA\Model\BulkTrackResponse
      */
     public function trackBulk($body)
     {
@@ -632,15 +632,15 @@ class EventsApi
      *
      * Bulk track events
      *
-     * @param  \IterableIA\Iterable\Model\BulkTrackRequest $body Events to track (required)
+     * @param  \IterableIA\Model\BulkTrackRequest $body Events to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\BulkTrackResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\BulkTrackResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackBulkWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\BulkTrackResponse';
+        $returnType = '\IterableIA\Model\BulkTrackResponse';
         $request = $this->trackBulkRequest($body);
 
         try {
@@ -692,7 +692,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\BulkTrackResponse',
+                        '\IterableIA\Model\BulkTrackResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -707,7 +707,7 @@ class EventsApi
      *
      * Bulk track events
      *
-     * @param  \IterableIA\Iterable\Model\BulkTrackRequest $body Events to track (required)
+     * @param  \IterableIA\Model\BulkTrackRequest $body Events to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -727,14 +727,14 @@ class EventsApi
      *
      * Bulk track events
      *
-     * @param  \IterableIA\Iterable\Model\BulkTrackRequest $body Events to track (required)
+     * @param  \IterableIA\Model\BulkTrackRequest $body Events to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackBulkAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\BulkTrackResponse';
+        $returnType = '\IterableIA\Model\BulkTrackResponse';
         $request = $this->trackBulkRequest($body);
 
         return $this->client
@@ -777,7 +777,7 @@ class EventsApi
     /**
      * Create request for operation 'trackBulk'
      *
-     * @param  \IterableIA\Iterable\Model\BulkTrackRequest $body Events to track (required)
+     * @param  \IterableIA\Model\BulkTrackRequest $body Events to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -877,11 +877,11 @@ class EventsApi
      *
      * Track an in-app click
      *
-     * @param  \IterableIA\Iterable\Model\InAppClickRequest $body In-app click to track (required)
+     * @param  \IterableIA\Model\InAppClickRequest $body In-app click to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function trackInAppClick($body)
     {
@@ -894,15 +894,15 @@ class EventsApi
      *
      * Track an in-app click
      *
-     * @param  \IterableIA\Iterable\Model\InAppClickRequest $body In-app click to track (required)
+     * @param  \IterableIA\Model\InAppClickRequest $body In-app click to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackInAppClickWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackInAppClickRequest($body);
 
         try {
@@ -954,7 +954,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class EventsApi
      *
      * Track an in-app click
      *
-     * @param  \IterableIA\Iterable\Model\InAppClickRequest $body In-app click to track (required)
+     * @param  \IterableIA\Model\InAppClickRequest $body In-app click to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -989,14 +989,14 @@ class EventsApi
      *
      * Track an in-app click
      *
-     * @param  \IterableIA\Iterable\Model\InAppClickRequest $body In-app click to track (required)
+     * @param  \IterableIA\Model\InAppClickRequest $body In-app click to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackInAppClickAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackInAppClickRequest($body);
 
         return $this->client
@@ -1039,7 +1039,7 @@ class EventsApi
     /**
      * Create request for operation 'trackInAppClick'
      *
-     * @param  \IterableIA\Iterable\Model\InAppClickRequest $body In-app click to track (required)
+     * @param  \IterableIA\Model\InAppClickRequest $body In-app click to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1139,11 +1139,11 @@ class EventsApi
      *
      * Track an in-app open
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app open to track (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app open to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function trackInAppOpen($body)
     {
@@ -1156,15 +1156,15 @@ class EventsApi
      *
      * Track an in-app open
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app open to track (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app open to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackInAppOpenWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackInAppOpenRequest($body);
 
         try {
@@ -1216,7 +1216,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1231,7 +1231,7 @@ class EventsApi
      *
      * Track an in-app open
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app open to track (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app open to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1251,14 +1251,14 @@ class EventsApi
      *
      * Track an in-app open
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app open to track (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app open to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackInAppOpenAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackInAppOpenRequest($body);
 
         return $this->client
@@ -1301,7 +1301,7 @@ class EventsApi
     /**
      * Create request for operation 'trackInAppOpen'
      *
-     * @param  \IterableIA\Iterable\Model\InAppEventRequest $body In-app open to track (required)
+     * @param  \IterableIA\Model\InAppEventRequest $body In-app open to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1401,11 +1401,11 @@ class EventsApi
      *
      * Track a mobile push open
      *
-     * @param  \IterableIA\Iterable\Model\TrackPushOpenRequest $body Push open to track (required)
+     * @param  \IterableIA\Model\TrackPushOpenRequest $body Push open to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function trackPushOpen($body)
     {
@@ -1418,15 +1418,15 @@ class EventsApi
      *
      * Track a mobile push open
      *
-     * @param  \IterableIA\Iterable\Model\TrackPushOpenRequest $body Push open to track (required)
+     * @param  \IterableIA\Model\TrackPushOpenRequest $body Push open to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackPushOpenWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackPushOpenRequest($body);
 
         try {
@@ -1478,7 +1478,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1493,7 +1493,7 @@ class EventsApi
      *
      * Track a mobile push open
      *
-     * @param  \IterableIA\Iterable\Model\TrackPushOpenRequest $body Push open to track (required)
+     * @param  \IterableIA\Model\TrackPushOpenRequest $body Push open to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1513,14 +1513,14 @@ class EventsApi
      *
      * Track a mobile push open
      *
-     * @param  \IterableIA\Iterable\Model\TrackPushOpenRequest $body Push open to track (required)
+     * @param  \IterableIA\Model\TrackPushOpenRequest $body Push open to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackPushOpenAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackPushOpenRequest($body);
 
         return $this->client
@@ -1563,7 +1563,7 @@ class EventsApi
     /**
      * Create request for operation 'trackPushOpen'
      *
-     * @param  \IterableIA\Iterable\Model\TrackPushOpenRequest $body Push open to track (required)
+     * @param  \IterableIA\Model\TrackPushOpenRequest $body Push open to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1663,11 +1663,11 @@ class EventsApi
      *
      * Track a web push click
      *
-     * @param  \IterableIA\Iterable\Model\WebPushClickEventRequest $body Web Push click to track (required)
+     * @param  \IterableIA\Model\WebPushClickEventRequest $body Web Push click to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function trackWebPushClick($body)
     {
@@ -1680,15 +1680,15 @@ class EventsApi
      *
      * Track a web push click
      *
-     * @param  \IterableIA\Iterable\Model\WebPushClickEventRequest $body Web Push click to track (required)
+     * @param  \IterableIA\Model\WebPushClickEventRequest $body Web Push click to track (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackWebPushClickWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackWebPushClickRequest($body);
 
         try {
@@ -1740,7 +1740,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1755,7 +1755,7 @@ class EventsApi
      *
      * Track a web push click
      *
-     * @param  \IterableIA\Iterable\Model\WebPushClickEventRequest $body Web Push click to track (required)
+     * @param  \IterableIA\Model\WebPushClickEventRequest $body Web Push click to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1775,14 +1775,14 @@ class EventsApi
      *
      * Track a web push click
      *
-     * @param  \IterableIA\Iterable\Model\WebPushClickEventRequest $body Web Push click to track (required)
+     * @param  \IterableIA\Model\WebPushClickEventRequest $body Web Push click to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackWebPushClickAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackWebPushClickRequest($body);
 
         return $this->client
@@ -1825,7 +1825,7 @@ class EventsApi
     /**
      * Create request for operation 'trackWebPushClick'
      *
-     * @param  \IterableIA\Iterable\Model\WebPushClickEventRequest $body Web Push click to track (required)
+     * @param  \IterableIA\Model\WebPushClickEventRequest $body Web Push click to track (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1928,9 +1928,9 @@ class EventsApi
      * @param  string $email Email of the user whose events you are retrieving. (required)
      * @param  int $limit The number of events to retrieve.  (Max is 200) (optional, default to 30)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\GetEventsResponse
+     * @return \IterableIA\Model\GetEventsResponse
      */
     public function userEvents($email, $limit = '30')
     {
@@ -1946,13 +1946,13 @@ class EventsApi
      * @param  string $email Email of the user whose events you are retrieving. (required)
      * @param  int $limit The number of events to retrieve.  (Max is 200) (optional, default to 30)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\GetEventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\GetEventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function userEventsWithHttpInfo($email, $limit = '30')
     {
-        $returnType = '\IterableIA\Iterable\Model\GetEventsResponse';
+        $returnType = '\IterableIA\Model\GetEventsResponse';
         $request = $this->userEventsRequest($email, $limit);
 
         try {
@@ -2004,7 +2004,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\GetEventsResponse',
+                        '\IterableIA\Model\GetEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2048,7 +2048,7 @@ class EventsApi
      */
     public function userEventsAsyncWithHttpInfo($email, $limit = '30')
     {
-        $returnType = '\IterableIA\Iterable\Model\GetEventsResponse';
+        $returnType = '\IterableIA\Model\GetEventsResponse';
         $request = $this->userEventsRequest($email, $limit);
 
         return $this->client

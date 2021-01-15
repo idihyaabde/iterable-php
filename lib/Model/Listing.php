@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * Listing Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class Listing implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\IterableIA\Iterable\Model\MetadataProperties[]',
+        'results' => '\IterableIA\Model\MetadataProperties[]',
 'next_marker' => 'string'    ];
 
     /**
@@ -208,7 +208,7 @@ class Listing implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \IterableIA\Iterable\Model\MetadataProperties[]
+     * @return \IterableIA\Model\MetadataProperties[]
      */
     public function getResults()
     {
@@ -218,7 +218,7 @@ class Listing implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \IterableIA\Iterable\Model\MetadataProperties[] $results results
+     * @param \IterableIA\Model\MetadataProperties[] $results results
      *
      * @return $this
      */

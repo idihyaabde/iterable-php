@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * UpdateCartRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class UpdateCartRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'user' => '\IterableIA\Iterable\Model\ApiUserUpdateRequest',
-'items' => '\IterableIA\Iterable\Model\CommerceItem[]'    ];
+        'user' => '\IterableIA\Model\ApiUserUpdateRequest',
+'items' => '\IterableIA\Model\CommerceItem[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -211,7 +211,7 @@ class UpdateCartRequest implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \IterableIA\Iterable\Model\ApiUserUpdateRequest
+     * @return \IterableIA\Model\ApiUserUpdateRequest
      */
     public function getUser()
     {
@@ -221,7 +221,7 @@ class UpdateCartRequest implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \IterableIA\Iterable\Model\ApiUserUpdateRequest $user user
+     * @param \IterableIA\Model\ApiUserUpdateRequest $user user
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class UpdateCartRequest implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \IterableIA\Iterable\Model\CommerceItem[]
+     * @return \IterableIA\Model\CommerceItem[]
      */
     public function getItems()
     {
@@ -245,7 +245,7 @@ class UpdateCartRequest implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \IterableIA\Iterable\Model\CommerceItem[] $items items
+     * @param \IterableIA\Model\CommerceItem[] $items items
      *
      * @return $this
      */

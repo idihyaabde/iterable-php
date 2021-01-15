@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * ExperimentsApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class ExperimentsApi
      * @param  \DateTime $start_date_time export starting from (&gt;&#x3D;) (optional)
      * @param  \DateTime $end_date_time export ending at (&lt;&#x3D;) (optional)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\ExperimentMetricsResponse
+     * @return \IterableIA\Model\ExperimentMetricsResponse
      */
     public function getExperimentMetrics($experiment_id = null, $campaign_id = null, $start_date_time = null, $end_date_time = null)
     {
@@ -116,13 +116,13 @@ class ExperimentsApi
      * @param  \DateTime $start_date_time export starting from (&gt;&#x3D;) (optional)
      * @param  \DateTime $end_date_time export ending at (&lt;&#x3D;) (optional)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\ExperimentMetricsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\ExperimentMetricsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getExperimentMetricsWithHttpInfo($experiment_id = null, $campaign_id = null, $start_date_time = null, $end_date_time = null)
     {
-        $returnType = '\IterableIA\Iterable\Model\ExperimentMetricsResponse';
+        $returnType = '\IterableIA\Model\ExperimentMetricsResponse';
         $request = $this->getExperimentMetricsRequest($experiment_id, $campaign_id, $start_date_time, $end_date_time);
 
         try {
@@ -174,7 +174,7 @@ class ExperimentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\ExperimentMetricsResponse',
+                        '\IterableIA\Model\ExperimentMetricsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class ExperimentsApi
      */
     public function getExperimentMetricsAsyncWithHttpInfo($experiment_id = null, $campaign_id = null, $start_date_time = null, $end_date_time = null)
     {
-        $returnType = '\IterableIA\Iterable\Model\ExperimentMetricsResponse';
+        $returnType = '\IterableIA\Model\ExperimentMetricsResponse';
         $request = $this->getExperimentMetricsRequest($experiment_id, $campaign_id, $start_date_time, $end_date_time);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Api;
+namespace IterableIA\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use IterableIA\Iterable\ApiException;
-use IterableIA\Iterable\Configuration;
-use IterableIA\Iterable\HeaderSelector;
-use IterableIA\Iterable\ObjectSerializer;
+use IterableIA\ApiException;
+use IterableIA\Configuration;
+use IterableIA\HeaderSelector;
+use IterableIA\ObjectSerializer;
 
 /**
  * CommerceApi Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class CommerceApi
      *
      * Track a purchase
      *
-     * @param  \IterableIA\Iterable\Model\TrackPurchaseRequest $body purchase data (required)
+     * @param  \IterableIA\Model\TrackPurchaseRequest $body purchase data (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function trackPurchase($body)
     {
@@ -108,15 +108,15 @@ class CommerceApi
      *
      * Track a purchase
      *
-     * @param  \IterableIA\Iterable\Model\TrackPurchaseRequest $body purchase data (required)
+     * @param  \IterableIA\Model\TrackPurchaseRequest $body purchase data (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function trackPurchaseWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackPurchaseRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class CommerceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class CommerceApi
      *
      * Track a purchase
      *
-     * @param  \IterableIA\Iterable\Model\TrackPurchaseRequest $body purchase data (required)
+     * @param  \IterableIA\Model\TrackPurchaseRequest $body purchase data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class CommerceApi
      *
      * Track a purchase
      *
-     * @param  \IterableIA\Iterable\Model\TrackPurchaseRequest $body purchase data (required)
+     * @param  \IterableIA\Model\TrackPurchaseRequest $body purchase data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trackPurchaseAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->trackPurchaseRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class CommerceApi
     /**
      * Create request for operation 'trackPurchase'
      *
-     * @param  \IterableIA\Iterable\Model\TrackPurchaseRequest $body purchase data (required)
+     * @param  \IterableIA\Model\TrackPurchaseRequest $body purchase data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -353,11 +353,11 @@ class CommerceApi
      *
      * Update user 'shoppingCartItems'
      *
-     * @param  \IterableIA\Iterable\Model\UpdateCartRequest $body state of the cart (required)
+     * @param  \IterableIA\Model\UpdateCartRequest $body state of the cart (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \IterableIA\Iterable\Model\IterableApiResponse
+     * @return \IterableIA\Model\IterableApiResponse
      */
     public function updateCart($body)
     {
@@ -370,15 +370,15 @@ class CommerceApi
      *
      * Update user 'shoppingCartItems'
      *
-     * @param  \IterableIA\Iterable\Model\UpdateCartRequest $body state of the cart (required)
+     * @param  \IterableIA\Model\UpdateCartRequest $body state of the cart (required)
      *
-     * @throws \IterableIA\Iterable\ApiException on non-2xx response
+     * @throws \IterableIA\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \IterableIA\Iterable\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \IterableIA\Model\IterableApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCartWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->updateCartRequest($body);
 
         try {
@@ -430,7 +430,7 @@ class CommerceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\IterableIA\Iterable\Model\IterableApiResponse',
+                        '\IterableIA\Model\IterableApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -445,7 +445,7 @@ class CommerceApi
      *
      * Update user 'shoppingCartItems'
      *
-     * @param  \IterableIA\Iterable\Model\UpdateCartRequest $body state of the cart (required)
+     * @param  \IterableIA\Model\UpdateCartRequest $body state of the cart (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -465,14 +465,14 @@ class CommerceApi
      *
      * Update user 'shoppingCartItems'
      *
-     * @param  \IterableIA\Iterable\Model\UpdateCartRequest $body state of the cart (required)
+     * @param  \IterableIA\Model\UpdateCartRequest $body state of the cart (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCartAsyncWithHttpInfo($body)
     {
-        $returnType = '\IterableIA\Iterable\Model\IterableApiResponse';
+        $returnType = '\IterableIA\Model\IterableApiResponse';
         $request = $this->updateCartRequest($body);
 
         return $this->client
@@ -515,7 +515,7 @@ class CommerceApi
     /**
      * Create request for operation 'updateCart'
      *
-     * @param  \IterableIA\Iterable\Model\UpdateCartRequest $body state of the cart (required)
+     * @param  \IterableIA\Model\UpdateCartRequest $body state of the cart (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

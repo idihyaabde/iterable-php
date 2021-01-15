@@ -1,4 +1,4 @@
-# IterableIA\Iterable\WorkflowsApi
+# IterableIA\WorkflowsApi
 
 All URIs are relative to *https://api.iterable.com*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**triggerWorkflow**](WorkflowsApi.md#triggerworkflow) | **POST** /api/workflows/triggerWorkflow | Trigger a workflow
 
 # **triggerWorkflow**
-> \IterableIA\Iterable\Model\IterableApiResponse triggerWorkflow($body)
+> \IterableIA\Model\IterableApiResponse triggerWorkflow($body)
 
 Trigger a workflow
 
@@ -18,17 +18,17 @@ Trigger a workflow. Triggering with a list is asynchronous. If a list trigger is
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apikey
-$config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
+$config = IterableIA\Configuration::getDefaultConfiguration()->setApiKey('Api_Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = IterableIA\Iterable\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
+// $config = IterableIA\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Api_Key', 'Bearer');
 
-$apiInstance = new IterableIA\Iterable\Api\WorkflowsApi(
+$apiInstance = new IterableIA\Api\WorkflowsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \IterableIA\Iterable\Model\TriggerWorkflowRequest(); // \IterableIA\Iterable\Model\TriggerWorkflowRequest | Trigger workflow request
+$body = new \IterableIA\Model\TriggerWorkflowRequest(); // \IterableIA\Model\TriggerWorkflowRequest | Trigger workflow request
 
 try {
     $result = $apiInstance->triggerWorkflow($body);
@@ -43,11 +43,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\IterableIA\Iterable\Model\TriggerWorkflowRequest**](../Model/TriggerWorkflowRequest.md)| Trigger workflow request |
+ **body** | [**\IterableIA\Model\TriggerWorkflowRequest**](../Model/TriggerWorkflowRequest.md)| Trigger workflow request |
 
 ### Return type
 
-[**\IterableIA\Iterable\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
+[**\IterableIA\Model\IterableApiResponse**](../Model/IterableApiResponse.md)
 
 ### Authorization
 

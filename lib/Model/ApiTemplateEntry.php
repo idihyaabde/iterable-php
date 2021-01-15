@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ApiTemplateEntry Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ApiTemplateEntry implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'template_id' => 'int',
 'campaign_id' => 'int',
-'locales' => '\IterableIA\Iterable\Model\IterableLocale[]'    ];
+'locales' => '\IterableIA\Model\IterableLocale[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -262,7 +262,7 @@ class ApiTemplateEntry implements ModelInterface, ArrayAccess
     /**
      * Gets locales
      *
-     * @return \IterableIA\Iterable\Model\IterableLocale[]
+     * @return \IterableIA\Model\IterableLocale[]
      */
     public function getLocales()
     {
@@ -272,7 +272,7 @@ class ApiTemplateEntry implements ModelInterface, ArrayAccess
     /**
      * Sets locales
      *
-     * @param \IterableIA\Iterable\Model\IterableLocale[] $locales Locales with content for this template
+     * @param \IterableIA\Model\IterableLocale[] $locales Locales with content for this template
      *
      * @return $this
      */

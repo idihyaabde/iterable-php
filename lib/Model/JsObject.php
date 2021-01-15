@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * JsObject Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class JsObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'underlying' => 'map[string,\IterableIA\Iterable\Model\JsValue]',
-'fields' => '\IterableIA\Iterable\Model\Tuple2StringJsValue[]',
-'value' => 'map[string,\IterableIA\Iterable\Model\JsValue]'    ];
+        'underlying' => 'map[string,\IterableIA\Model\JsValue]',
+'fields' => '\IterableIA\Model\Tuple2StringJsValue[]',
+'value' => 'map[string,\IterableIA\Model\JsValue]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -220,7 +220,7 @@ class JsObject implements ModelInterface, ArrayAccess
     /**
      * Gets underlying
      *
-     * @return map[string,\IterableIA\Iterable\Model\JsValue]
+     * @return map[string,\IterableIA\Model\JsValue]
      */
     public function getUnderlying()
     {
@@ -230,7 +230,7 @@ class JsObject implements ModelInterface, ArrayAccess
     /**
      * Sets underlying
      *
-     * @param map[string,\IterableIA\Iterable\Model\JsValue] $underlying underlying
+     * @param map[string,\IterableIA\Model\JsValue] $underlying underlying
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class JsObject implements ModelInterface, ArrayAccess
     /**
      * Gets fields
      *
-     * @return \IterableIA\Iterable\Model\Tuple2StringJsValue[]
+     * @return \IterableIA\Model\Tuple2StringJsValue[]
      */
     public function getFields()
     {
@@ -254,7 +254,7 @@ class JsObject implements ModelInterface, ArrayAccess
     /**
      * Sets fields
      *
-     * @param \IterableIA\Iterable\Model\Tuple2StringJsValue[] $fields fields
+     * @param \IterableIA\Model\Tuple2StringJsValue[] $fields fields
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class JsObject implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return map[string,\IterableIA\Iterable\Model\JsValue]
+     * @return map[string,\IterableIA\Model\JsValue]
      */
     public function getValue()
     {
@@ -278,7 +278,7 @@ class JsObject implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param map[string,\IterableIA\Iterable\Model\JsValue] $value value
+     * @param map[string,\IterableIA\Model\JsValue] $value value
      *
      * @return $this
      */

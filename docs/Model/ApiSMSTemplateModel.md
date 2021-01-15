@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **updated_at** | [**\DateTime**](\DateTime.md) | Date last updated [Read only] | [optional] 
 **name** | **string** | Name of the template | [optional] 
 **message** | **string** | SMS message | [optional] 
-**locale** | [**\IterableIA\Iterable\Model\IterableLocale**](IterableLocale.md) |  | [optional] 
+**locale** | [**\IterableIA\Model\IterableLocale**](IterableLocale.md) |  | [optional] 
 **message_type_id** | **int** | Message Type Id | [optional] 
 **image_url** | **string** | Image Url | [optional] 
 **client_template_id** | **string** | Client template Id. Used as a secondary key to reference the template | [optional] 

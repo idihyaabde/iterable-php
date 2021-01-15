@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * UnsubscribeRequest Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class UnsubscribeRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'list_id' => 'int',
-'subscribers' => '\IterableIA\Iterable\Model\Unsubscriber[]',
+'subscribers' => '\IterableIA\Model\Unsubscriber[]',
 'campaign_id' => 'int',
 'channel_unsubscribe' => 'bool'    ];
 
@@ -247,7 +247,7 @@ class UnsubscribeRequest implements ModelInterface, ArrayAccess
     /**
      * Gets subscribers
      *
-     * @return \IterableIA\Iterable\Model\Unsubscriber[]
+     * @return \IterableIA\Model\Unsubscriber[]
      */
     public function getSubscribers()
     {
@@ -257,7 +257,7 @@ class UnsubscribeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets subscribers
      *
-     * @param \IterableIA\Iterable\Model\Unsubscriber[] $subscribers subscribers
+     * @param \IterableIA\Model\Unsubscriber[] $subscribers subscribers
      *
      * @return $this
      */

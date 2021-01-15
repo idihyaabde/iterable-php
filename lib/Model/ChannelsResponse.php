@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace IterableIA\Iterable\Model;
+namespace IterableIA\Model;
 
 use \ArrayAccess;
-use \IterableIA\Iterable\ObjectSerializer;
+use \IterableIA\ObjectSerializer;
 
 /**
  * ChannelsResponse Class Doc Comment
  *
  * @category Class
- * @package  IterableIA\Iterable
+ * @package  IterableIA
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ChannelsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'channels' => '\IterableIA\Iterable\Model\ChannelDetails[]'    ];
+        'channels' => '\IterableIA\Model\ChannelDetails[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class ChannelsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets channels
      *
-     * @return \IterableIA\Iterable\Model\ChannelDetails[]
+     * @return \IterableIA\Model\ChannelDetails[]
      */
     public function getChannels()
     {
@@ -212,7 +212,7 @@ class ChannelsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets channels
      *
-     * @param \IterableIA\Iterable\Model\ChannelDetails[] $channels channels
+     * @param \IterableIA\Model\ChannelDetails[] $channels channels
      *
      * @return $this
      */
