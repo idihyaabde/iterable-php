@@ -3702,16 +3702,20 @@
             "type" : "number"
           },
           "createdAt" : {
-            "type" : "integer"
+            "type" : "integer",
+            "format" : "int64"
           },
           "updatedAt" : {
-            "type" : "integer"
+            "type" : "integer",
+            "format" : "int64"
           },
           "startAt" : {
-            "type" : "integer"
+            "type" : "integer",
+            "format" : "int64"
           },
           "endedAt" : {
-            "type" : "integer"
+            "type" : "integer",
+            "format" : "int64"
           },
           "name" : {
             "type" : "string"
