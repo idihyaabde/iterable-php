@@ -350,7 +350,7 @@ class TrackRequest implements ModelInterface, ArrayAccess
     /**
      * Sets data_fields
      *
-     * @param object $data_fields Additional data associated with event (i.e. item id, item amount)
+     * @param array $data_fields Additional data associated with event (i.e. item id, item amount)
      *
      * @return $this
      */
